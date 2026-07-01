@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>সহযোগিতা ও সদস্যপদ • Abhijatri Sangha - Salkia, Howrah</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts for Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Configuration for Custom Bengali Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saffron: '#FF6F00',
+            vermillion: '#B71C1C',
+            crimsonDark: '#5E0808',
+            gold: '#D4AF37',
+            cream: '#FDF6E3',
+            charcoal: '#1A1A1A',
+            charcoalLight: '#2A2A2A'
+          },
+          fontFamily: {
+            bengali: ['Noto Serif Bengali', 'Times New Roman', 'serif'],
+            display: ['Georgia', 'Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style type="text/css">
+    .bg-grid-overlay {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1A1A1A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #B71C1C;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FF6F00;
+    }
+    .bengali-title {
+      font-family: 'Noto Serif Bengali', serif;
+    }
+    .display-title {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-cream text-charcoal font-sans overflow-x-hidden">
+
+  <!-- Floating Alpona Particles (Artistic Flair Theme) -->
+  <div class="fixed inset-0 pointer-events-none z-0 opacity-15">
+    <!-- Top Left Alpona Motif -->
+    <div class="absolute -top-12 -left-12 w-[350px] h-[350px] opacity-10 pointer-events-none text-vermillion">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+        <circle cx="50" cy="50" r="40" />
+        <circle cx="50" cy="50" r="30" stroke-dasharray="2 2" />
+        <path d="M50 10 L55 30 L75 35 L55 40 L50 60 L45 40 L25 35 L45 30 Z" />
+        <path d="M50 20 L53 33 L66 35 L53 37 L50 50 L47 37 L34 35 L47 33 Z" />
+      </svg>
+    </div>
+    <!-- Bottom Right Alpona Motif -->
+    <div class="absolute -bottom-12 -right-12 w-[350px] h-[350px] opacity-10 rotate-45 pointer-events-none text-vermillion">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+        <circle cx="50" cy="50" r="40" />
+        <path d="M50 5 C30 5 10 30 50 95 C90 30 70 5 50 5Z" />
+        <circle cx="50" cy="40" r="15" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER & GLASS NAVIGATION (Artistic Flair Theme) -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="navbar">
+    <div class="bg-white/40 backdrop-blur-md border-b border-gold/30 py-3 px-4 md:px-8">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 bg-vermillion rounded-full flex items-center justify-center border border-gold shadow-md group-hover:scale-105 transition-transform">
+            <svg class="w-8 h-8 text-gold" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M50 15c-3 10-10 18-20 22 10 3 17 12 20 23 3-11 10-20 20-23-10-4-17-12-20-22z" />
+              <path d="M50 35c-2 6-6 10-12 12 6 2 10 7 12 13 2-6 6-11 12-13-6-2-10-6-12-12z" opacity="0.8"/>
+              <circle cx="50" cy="50" r="5" fill="#FF6F00"/>
+            </svg>
+          </div>
+          <div>
+            <h1 class="text-charcoal text-lg md:text-xl font-bold font-bengali tracking-wide leading-tight" style="font-family: 'Times New Roman', serif;">অভিযাত্রী সংঘ</h1>
+            <p class="text-vermillion text-[10px] font-bold uppercase tracking-[0.2em] font-sans">সালকিয়া, হাওড়া</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">হোম</a>
+          <a href="about.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">আমাদের সম্পর্কে</a>
+          <a href="events.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">উৎসব</a>
+          <a href="gallery.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">গ্যালারি</a>
+          <a href="contact.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">যোগাযোগ</a>
+          <a href="donate.html" class="relative text-white text-sm font-semibold font-bengali py-2 px-5 rounded-full bg-gradient-to-r from-vermillion to-saffron border border-gold shadow-[0_4px_15px_rgba(212,175,55,0.4)] transition-all">সহায়তা করুন</a>
+        </nav>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-vermillion hover:text-saffron focus:outline-none" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="w-7 h-7"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Artistic Flair Theme) -->
+    <div id="mobile-menu" class="hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] bg-cream/95 backdrop-blur-lg z-40 border-t border-gold/20">
+      <div class="flex flex-col items-center justify-center h-full space-y-6 pb-20 px-6">
+        <a href="index.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">হোম</a>
+        <a href="about.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">আমাদের সম্পর্কে</a>
+        <a href="events.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">উৎসব</a>
+        <a href="gallery.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">গ্যালারি</a>
+        <a href="contact.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">যোগাযোগ</a>
+        <a href="donate.html" class="text-vermillion font-bold font-bengali text-2xl border-b-2 border-vermillion pb-1 w-full text-center">সহায়তা করুন</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="relative pt-36 pb-16 bg-gradient-to-b from-crimsonDark to-vermillion text-white text-center">
+    <div class="absolute inset-0 bg-grid-overlay opacity-20"></div>
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-4">
+      <span class="text-gold font-bold uppercase tracking-widest text-xs border-b border-gold/40 pb-1" data-aos="fade-up">সহযোগিতা তহবিল</span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold font-bengali text-cream" data-aos="fade-up" data-aos-delay="100">
+        আমাদের ঐতিহ্যে অবদান রাখুন
+      </h1>
+      <p class="text-gold font-bengali text-base sm:text-lg max-w-2xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+        আপনার উদার অনুদান সমাজসেবা কর্মসূচী এবং বাৎসরিক উৎসবকে সফল করতে অগ্রণী ভূমিকা পালন করে
+      </p>
+    </div>
+    <!-- Bottom wave -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none translate-y-1">
+      <svg class="relative block w-full h-[30px]" viewBox="0 0 1200 120" preserveAspectRatio="none" fill="#FDF6E3">
+        <path d="M0,0 C150,90 350,120 600,100 C850,80 1050,90 1200,0 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- DONATION EXPLANATION & PURPOSE -->
+  <section class="py-16 px-4 md:px-8 relative z-10">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto space-y-4" data-aos="fade-up">
+        <span class="text-vermillion uppercase font-bold tracking-widest text-xs font-bengali">অঙ্গীকারনামা</span>
+        <h2 class="text-3xl font-extrabold font-bengali text-charcoal">অনুদানের মাধ্যমে সমাজ কল্যাণ সাধন</h2>
+        <p class="text-charcoal/80 font-bengali leading-relaxed text-base sm:text-lg">
+          অভিযাত্রী সংঘের সকল সামাজিক উদ্যোগ এবং উৎসবের সার্থকতা নির্ভরশীল পাড়ার সুধী সমাজ ও শুভাকাঙ্ক্ষীদের উদার অর্থ সাহায্যের ওপর। সংগৃহীত অনুদান কীভাবে ব্যয় করা হয় তার সংক্ষিপ্ত হিসেব নিচে দেওয়া হল:
+        </p>
+      </div>
+
+      <!-- Expense Allocations Icons Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+        <div class="bg-white border border-gold/20 p-6 rounded-2xl shadow-md text-center space-y-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 bg-vermillion/10 text-vermillion rounded-xl flex items-center justify-center mx-auto border border-vermillion/20">
+            <i data-lucide="gift" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold font-bengali text-charcoal text-base">বস্ত্র ও খাদ্য বিতরণ</h3>
+          <p class="text-xs text-charcoal/60 font-bengali leading-relaxed">বাৎসরিক উৎসবের দিনগুলোতে দুঃস্থ মানুষদের মাঝে নতুন পোশাক ও আহার সামগ্রী বিতরণ।</p>
+        </div>
+        
+        <div class="bg-white border border-gold/20 p-6 rounded-2xl shadow-md text-center space-y-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 bg-saffron/10 text-saffron rounded-xl flex items-center justify-center mx-auto border border-saffron/20">
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold font-bengali text-charcoal text-base">বিনামূল্যে চিকিৎসাসেবা</h3>
+          <p class="text-xs text-charcoal/60 font-bengali leading-relaxed">সারাবছর আয়োজিত চক্ষু অপারেশন শিবির, ডায়াবেটিস পরীক্ষা এবং ওষুধপত্র প্রদান করা।</p>
+        </div>
+
+        <div class="bg-white border border-gold/20 p-6 rounded-2xl shadow-md text-center space-y-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 bg-emerald-950/10 text-emerald-900 rounded-xl flex items-center justify-center mx-auto border border-emerald-950/20">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold font-bengali text-charcoal text-base">মণ্ডপ ও শাস্ত্রীয় উৎসব</h3>
+          <p class="text-xs text-charcoal/60 font-bengali leading-relaxed">দুর্গাপূজা, কালীপূজা ও অন্যান্য পরবে ঐতিহ্যবাহী প্রতিমা সজ্জা, মণ্ডপ ও আলোকসজ্জা নির্মাণ।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATION TIERS SELECTOR -->
+  <section class="py-12 px-4 md:px-8 bg-charcoal text-white relative">
+    <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+    <div class="max-w-7xl mx-auto relative z-10">
+      
+      <div class="text-center mb-16">
+        <span class="text-gold uppercase font-bold tracking-widest text-xs block mb-2" data-aos="fade-up">অনুদানের ধাপসমূহ</span>
+        <h2 class="text-3xl md:text-4xl font-bold font-bengali text-cream leading-tight" data-aos="fade-up" data-aos-delay="100">
+          আপনার সাধ্যমতো অনুদান ও সহযোগী ক্যাটাগরি নির্বাচন করুন
+        </h2>
+        <div class="w-20 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Tiers Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Tier 1 -->
+        <div onclick="selectDonation(501)" class="tier-card bg-[#222] border border-gold/20 rounded-2xl p-6 text-center hover:border-gold cursor-pointer transition-all hover:-translate-y-1 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <span class="text-gold/60 text-xs font-bold block tracking-wider mb-2 font-bengali">শুভাকাঙ্ক্ষী সাহায্যকারী</span>
+          <h3 class="text-xl font-bold font-bengali text-cream mb-4">শুভাকাঙ্ক্ষী সাহায্য</h3>
+          <div class="display-title text-4xl font-extrabold text-gold mb-4">₹৫০১</div>
+          <ul class="text-left text-xs space-y-2 text-cream/75 font-bengali border-t border-gold/10 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-gold flex-shrink-0"></i> পূজোর অফিশিয়াল স্যুভেনিরে নাম প্রকাশ</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-gold flex-shrink-0"></i> বাৎসরিক পূজা অঞ্জলির সুযোগ</li>
+          </ul>
+        </div>
+
+        <!-- Tier 2 -->
+        <div onclick="selectDonation(1200)" class="tier-card bg-[#222] border border-gold/20 rounded-2xl p-6 text-center hover:border-gold cursor-pointer transition-all hover:-translate-y-1 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <span class="text-gold/60 text-xs font-bold block tracking-wider mb-2 font-bengali">বার্ষিক সদস্যপদ</span>
+          <h3 class="text-xl font-bold font-bengali text-cream mb-4">বার্ষিক সাধারণ সদস্যপদ</h3>
+          <div class="display-title text-4xl font-extrabold text-gold mb-4">₹১,২০০</div>
+          <ul class="text-left text-xs space-y-2 text-cream/75 font-bengali border-t border-gold/10 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-gold flex-shrink-0"></i> ক্লাবের সাধারণ সদস্যপদ সার্টিফিকেট</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-gold flex-shrink-0"></i> উৎসবের ভোগ বিতরণে অগ্রাধিকার কুপন</li>
+          </ul>
+        </div>
+
+        <!-- Tier 3: Featured -->
+        <div onclick="selectDonation(5001)" class="tier-card bg-gradient-to-b from-crimsonDark to-charcoal border-2 border-gold rounded-2xl p-6 text-center hover:shadow-[0_0_20px_#D4AF37] cursor-pointer transition-all hover:-translate-y-1 shadow-lg relative" data-aos="fade-up" data-aos-delay="300">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-charcoal text-[10px] font-extrabold px-3 py-0.5 rounded-full shadow-md font-bengali tracking-widest">সর্বাধিক জনপ্রিয়</div>
+          <span class="text-gold/80 text-xs font-bold block tracking-wider mb-2 font-bengali">উৎসব পৃষ্ঠপোষক</span>
+          <h3 class="text-xl font-bold font-bengali text-cream mb-4">শারদীয় উৎসব পৃষ্ঠপোষক</h3>
+          <div class="display-title text-4xl font-extrabold text-gold mb-4">₹৫,০০১</div>
+          <ul class="text-left text-xs space-y-2 text-cream/75 font-bengali border-t border-gold/10 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-gold flex-shrink-0"></i> উৎসব গেট / তোরণ বিজ্ঞাপনে বিশেষ স্থান</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-gold flex-shrink-0"></i> ভিআইপি পূজা মণ্ডপ প্রবেশের ৪টি কার্ড</li>
+          </ul>
+        </div>
+
+        <!-- Tier 4 -->
+        <div onclick="selectDonation(15000)" class="tier-card bg-[#222] border border-gold/20 rounded-2xl p-6 text-center hover:border-gold cursor-pointer transition-all hover:-translate-y-1 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+          <span class="text-gold/60 text-xs font-bold block tracking-wider mb-2 font-bengali">আজীবন পরম সদস্যপদ</span>
+          <h3 class="text-xl font-bold font-bengali text-cream mb-4">আজীবন পরম সদস্যপদ</h3>
+          <div class="display-title text-4xl font-extrabold text-gold mb-4">₹১৫,০০০</div>
+          <ul class="text-left text-xs space-y-2 text-cream/75 font-bengali border-t border-gold/10 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-gold flex-shrink-0"></i> ক্লাবের স্থায়ী উপদেষ্টা মণ্ডলীর স্থায়ী পদ</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-1.5 text-gold flex-shrink-0"></i> শারদ স্যুভেনিরে পূর্ণ পৃষ্ঠার বিজ্ঞাপন স্থান</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PAYMENT PORTAL DETAILS & REPORT FORM -->
+  <section class="py-16 px-4 md:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Column 1: Payment Details with QR Mockup (Left) -->
+        <div class="lg:col-span-5 bg-charcoal text-white border border-gold/25 p-8 rounded-3xl shadow-xl bg-grid-overlay space-y-6" data-aos="fade-right">
+          <div class="space-y-1">
+            <span class="text-gold font-bold uppercase tracking-widest text-xs font-bengali">পেমেন্ট গেটওয়ে</span>
+            <h3 class="text-2xl font-bold font-bengali text-cream">অনলাইন পেমেন্ট মাধ্যম</h3>
+            <div class="h-[2px] bg-gold/30 rounded w-16"></div>
+          </div>
+
+          <!-- Stylized QR Code Scanning Mockup -->
+          <div class="bg-white text-charcoal rounded-2xl p-6 border-2 border-gold/40 text-center space-y-4 max-w-xs mx-auto">
+            <p class="text-xs font-bold text-charcoal/60 font-bengali">ফোনপে/জিপে/পেটিএম দিয়ে কিউআর কোড স্ক্যান করুন</p>
+            
+            <!-- Real generated vector looking QR representation -->
+            <div class="w-44 h-44 bg-cream/50 border border-gold/15 rounded-xl mx-auto flex items-center justify-center p-2 relative">
+              <!-- QR Corner borders -->
+              <div class="absolute top-2 left-2 w-8 h-8 border-t-4 border-l-4 border-vermillion rounded-tl-md"></div>
+              <div class="absolute top-2 right-2 w-8 h-8 border-t-4 border-r-4 border-vermillion rounded-tr-md"></div>
+              <div class="absolute bottom-2 left-2 w-8 h-8 border-b-4 border-l-4 border-vermillion rounded-bl-md"></div>
+              <div class="absolute bottom-2 right-2 w-8 h-8 border-b-4 border-r-4 border-vermillion rounded-br-md"></div>
+              
+              <!-- Core QR Grid Box mockup -->
+              <div class="w-32 h-32 bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%225%22 y=%225%22 width=%2225%22 height=%2225%22 fill=%22%231A1A1A%22/><rect x=%2210%22 y=%2210%22 width=%2215%22 height=%2215%22 fill=%22white%22/><rect x=%2212%22 y=%2212%22 width=%2211%22 height=%2211%22 fill=%22%231A1A1A%22/><rect x=%2270%22 y=%225%22 width=%2225%22 height=%2225%22 fill=%22%231A1A1A%22/><rect x=%2275%22 y=%2210%22 width=%2215%22 height=%2215%22 fill=%22white%22/><rect x=%2277%22 y=%2212%22 width=%2211%22 height=%2211%22 fill=%22%231A1A1A%22/><rect x=%225%22 y=%2270%22 width=%2225%22 height=%2225%22 fill=%22%231A1A1A%22/><rect x=%2210%22 y=%2275%22 width=%2215%22 height=%2215%22 fill=%22white%22/><rect x=%2212%22 y=%2277%22 width=%2211%22 height=%2211%22 fill=%22%231A1A1A%22/><rect x=%2240%22 y=%2240%22 width=%2220%22 height=%2220%22 fill=%22%23B71C1C%22/><circle cx=%2250%22 cy=%2250%22 r=%224%22 fill=%22white%22/><rect x=%2245%22 y=%2210%22 width=%2215%22 height=%228%22 fill=%22%231A1A1A%22/><rect x=%2275%22 y=%2245%22 width=%2212%22 height=%2212%22 fill=%22%231A1A1A%22/><rect x=%2245%22 y=%2275%22 width=%2218%22 height=%2215%22 fill=%22%231A1A1A%22/></svg>')] bg-contain bg-no-repeat bg-center"></div>
+            </div>
+
+            <!-- Copyable UPI ID -->
+            <div class="space-y-1 text-center">
+              <span class="text-[10px] text-charcoal/50 uppercase font-bold block font-bengali">ইউপিআই আইডি</span>
+              <div class="inline-flex items-center space-x-1.5 bg-cream/70 border border-gold/30 px-3 py-1.5 rounded-lg">
+                <span class="text-xs font-mono font-bold text-charcoal select-all" id="upi-id">abhijatri@sbi</span>
+                <button onclick="copyUPI()" class="text-vermillion hover:text-saffron transition-colors" title="আইডি কপি করুন">
+                  <i data-lucide="copy" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Bank account details -->
+          <div class="space-y-3 font-bengali text-sm text-cream border-t border-gold/25 pt-6">
+            <h4 class="font-bold text-gold text-xs uppercase tracking-wider">সরাসরি ব্যাংক অ্যাকাউন্ট ট্রান্সফার বিবরণ:</h4>
+            <div class="space-y-1.5 bg-white/5 border border-white/10 p-4 rounded-xl text-xs sm:text-sm">
+              <p>• <strong>অ্যাকাউন্ট নাম:</strong> অভিযাত্রী সংঘ পূজা কমিটি</p>
+              <p>• <strong>ব্যাংক নাম:</strong> স্টেট ব্যাঙ্ক অফ ইন্ডিয়া (সালকিয়া শাখা)</p>
+              <p>• <strong>অ্যাকাউন্ট নম্বর:</strong> ৩৩৩৩৩৩৩৩৩৩৩ (সঞ্চয়ী হিসাব)</p>
+              <p>• <strong>আইএফএসসি কোড:</strong> SBIN0001234</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Column 2: Donation Report Form (Right) -->
+        <div class="lg:col-span-7 bg-white border border-gold/25 p-8 rounded-3xl shadow-xl space-y-6" data-aos="fade-left">
+          <div class="space-y-2">
+            <span class="text-vermillion font-bold uppercase tracking-wider text-xs font-bengali">রসিদ ও যাচাইকরণ</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold font-bengali text-charcoal">অনুদানের বিবরণ জমা দিন</h2>
+            <div class="w-12 h-1 bg-vermillion rounded"></div>
+            <p class="text-xs text-charcoal/60 font-bengali">ইউপিআই বা ব্যাংক ট্রান্সফারের পর অনুগ্রহ করে নিচের বিবরণী পূরণ করে রসিদ পাওয়ার জন্য আবেদন করুন।</p>
+          </div>
+
+          <form id="pledgeForm" class="space-y-4 font-bengali" onsubmit="handlePledgeSubmit(event)">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="space-y-1.5">
+                <label for="donor-name" class="block text-sm font-bold text-charcoal/80">আপনার নাম <span class="text-vermillion">*</span></label>
+                <input type="text" id="donor-name" required class="w-full px-4 py-3 bg-cream/30 border border-gold/30 rounded-xl focus:ring-2 focus:ring-vermillion outline-none text-sm font-medium" placeholder="আপনার পুরো নাম">
+              </div>
+              <div class="space-y-1.5">
+                <label for="donor-phone" class="block text-sm font-bold text-charcoal/80">মোবাইল নম্বর <span class="text-vermillion">*</span></label>
+                <input type="tel" id="donor-phone" required class="w-full px-4 py-3 bg-cream/30 border border-gold/30 rounded-xl focus:ring-2 focus:ring-vermillion outline-none text-sm font-medium" placeholder="+৯১ ৯৮৭৬ ৫৪৩">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="space-y-1.5">
+                <label for="donor-amount" class="block text-sm font-bold text-charcoal/80">অনুদানের পরিমাণ (₹) <span class="text-vermillion">*</span></label>
+                <input type="number" id="donor-amount" required class="w-full px-4 py-3 bg-cream/30 border border-gold/30 rounded-xl focus:ring-2 focus:ring-vermillion outline-none text-sm font-medium" placeholder="₹">
+              </div>
+              <div class="space-y-1.5">
+                <label for="transaction-id" class="block text-sm font-bold text-charcoal/80">লেনদেন আইডি / ইউটিআর নম্বর <span class="text-vermillion">*</span></label>
+                <input type="text" id="transaction-id" required class="w-full px-4 py-3 bg-cream/30 border border-gold/30 rounded-xl focus:ring-2 focus:ring-vermillion outline-none text-sm font-medium" placeholder="লেনদেন নম্বর বা ইউটিআর">
+              </div>
+            </div>
+
+            <div class="space-y-1.5">
+              <label for="address" class="block text-sm font-bold text-charcoal/80">ডাক যোগাযোগের ঠিকানা</label>
+              <textarea id="address" rows="3" class="w-full px-4 py-3 bg-cream/30 border border-gold/30 rounded-xl focus:ring-2 focus:ring-vermillion outline-none text-sm font-medium" placeholder="সার্টিফিকেট ও পূজা প্রসাদ পাঠানোর ঠিকানা..."></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full bg-gradient-to-r from-vermillion to-saffron hover:from-saffron hover:to-vermillion text-white font-bold text-lg py-3.5 px-6 rounded-xl border border-gold/40 shadow-md transition-all duration-300 transform hover:-translate-y-0.5">
+                বিবরণী জমা দিন <i data-lucide="shield-check" class="inline-block w-5 h-5 ml-2 align-middle"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Success pledge modal -->
+          <div id="pledgeSuccess" class="hidden bg-emerald-100 border-2 border-emerald-500 text-emerald-900 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 font-bengali">
+            <i data-lucide="award" class="w-12 h-12 text-emerald-600"></i>
+            <div>
+              <h3 class="font-extrabold text-xl">আপনার অনুদান রেকর্ড সফলভাবে গৃহীত হইয়াছে!</h3>
+              <p class="text-sm mt-1">আমাদের ভেরিফিকেশন টিম লেনদেনের সত্যতা যাচাইপূর্বক ৫ কার্যদিবসের মধ্যে আপনার মোবাইল/ইমেইলে বাৎসরিক রসিদ এবং কুপন প্রেরণ করিবে।</p>
+              <p class="text-xs text-emerald-800 font-bold mt-2">আপনার এই অবদান আমাদের সংস্কৃতির মহাপ্রাণকে বাঁচিয়ে রাখতে সহায়ক হইবে। শুভ কামনা!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-white pt-16 pb-8 border-t border-gold/20 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 pb-12 border-b border-white/10">
+        
+        <!-- Column 1: Info and Branding -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-vermillion rounded-full flex items-center justify-center border border-gold">
+              <svg class="w-6 h-6 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50 15c-3 10-10 18-20 22 10 3 17 12 20 23 3-11 10-20 20-23-10-4-17-12-20-22z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold font-bengali text-lg text-white">অভিযাত্রী সংঘ</h3>
+              <p class="text-gold text-xs font-semibold tracking-wider uppercase font-bengali">সালকিয়া, হাওড়া</p>
+            </div>
+          </div>
+          <p class="text-cream/60 font-bengali text-sm leading-relaxed max-w-sm">
+            সালকিয়ার শশী ভূषण মুখার্জী লেনে অবস্থিত আমাদের সুপ্রাচীন সমাজসেবী ও সাংস্কৃতিক সংগঠন। দুর্গাপূজা, রক্তদান শিবির ও অন্যান্য উৎসবের প্রাণকেন্দ্র।
+          </p>
+          <div class="text-xs text-cream/40 font-bengali">
+            স্থাপিত: ১৯৬৪ • সালকিয়া, হাওড়া
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold font-bengali text-base uppercase tracking-wider">দ্রুত লিঙ্কসমূহ</h4>
+          <ul class="space-y-2 font-bengali text-sm text-cream/80">
+            <li><a href="index.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> হোম</a></li>
+            <li><a href="about.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> আমাদের সম্পর্কে</a></li>
+            <li><a href="events.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> উৎসব</a></li>
+            <li><a href="gallery.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> গ্যালারি</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> যোগাযোগ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold font-bengali text-base uppercase tracking-wider">ঠিকানা ও যোগাযোগ</h4>
+          <p class="text-cream/80 font-bengali text-sm leading-relaxed">
+            <strong class="text-white block font-bengali">অভিযাত্রী সংঘ কার্যালয়</strong>
+            শশী ভূষণ মুখার্জী লেন,<br>
+            সালকিয়া, হাওড়া-৭১১১০৬,<br>
+            পশ্চিমবঙ্গ, ভারত।
+          </p>
+          <div class="space-y-1 text-xs text-cream/60 font-bengali">
+            <p class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2 text-gold"></i> +৯১ ৩৩৩৩ ৩৩৩৩</p>
+            <p class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2 text-gold"></i> যোগাযোগ@অভিযাত্রীসংঘ.ওআরজি</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social and Copyright bottom strip -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-cream/40 gap-4 font-bengali">
+        <div>
+          <p class="text-center sm:text-left font-bengali">© ২০২৬ অভিযাত্রী সংঘ। সর্বস্বত্ব সংরক্ষিত।</p>
+          <p class="text-[10px] text-center sm:text-left text-cream/30 mt-0.5 font-bengali">গভীর বাঙালি ঐতিহ্যবাহী সংস্কৃতির মেলবন্ধন।</p>
+        </div>
+        
+        <!-- Social Icons -->
+        <div class="flex items-center space-x-4">
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="Facebook">
+            <i data-lucide="facebook" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="Instagram">
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="YouTube">
+            <i data-lucide="youtube" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- AOS, Lucide, Copy and Form logic -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-out'
+    });
+    lucide.createIcons();
+
+    // Select amount from tier cards and fill donor-amount field
+    function selectDonation(amount) {
+      const amountInput = document.getElementById("donor-amount");
+      amountInput.value = amount;
+      
+      // Scroll to input nicely
+      amountInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      amountInput.focus();
+    }
+
+    // Copy UPI function
+    function copyUPI() {
+      const upiText = document.getElementById("upi-id").innerText;
+      navigator.clipboard.writeText(upiText).then(() => {
+        alert("ইউপিআই আইডি কপি করা হয়েছে: " + upiText);
+      }).catch(err => {
+        console.error('Could not copy UPI ID:', err);
+      });
+    }
+
+    // Form submission
+    function handlePledgeSubmit(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById("pledgeForm");
+      const successBanner = document.getElementById("pledgeSuccess");
+      
+      form.classList.add("hidden");
+      successBanner.classList.remove("hidden");
+      
+      console.log("Donation details reported by donor:", {
+        name: document.getElementById("donor-name").value,
+        phone: document.getElementById("donor-phone").value,
+        amount: document.getElementById("donor-amount").value,
+        utr: document.getElementById("transaction-id").value,
+        address: document.getElementById("address").value
+      });
+    }
+
+    // Mobile Navigation Drawer Toggle
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    mobileMenuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+      if (isHidden) {
+        mobileMenu.classList.remove("hidden");
+        mobileMenuBtn.innerHTML = '<i data-lucide="x" class="w-7 h-7"></i>';
+      } else {
+        mobileMenu.classList.add("hidden");
+        mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="w-7 h-7"></i>';
+      }
+      lucide.createIcons();
+    });
+  </script>
+
+</body>
+</html>

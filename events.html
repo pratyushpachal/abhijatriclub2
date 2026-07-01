@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমাদের উৎসব ও আয়োজন • Abhijatri Sangha - Salkia, Howrah</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts for Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Configuration for Custom Bengali Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saffron: '#FF6F00',
+            vermillion: '#B71C1C',
+            crimsonDark: '#5E0808',
+            gold: '#D4AF37',
+            cream: '#FDF6E3',
+            charcoal: '#1A1A1A',
+            charcoalLight: '#2A2A2A'
+          },
+          fontFamily: {
+            bengali: ['Noto Serif Bengali', 'Times New Roman', 'serif'],
+            display: ['Georgia', 'Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style type="text/css">
+    .bg-grid-overlay {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1A1A1A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #B71C1C;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FF6F00;
+    }
+    .bengali-title {
+      font-family: 'Noto Serif Bengali', serif;
+    }
+    .display-title {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-cream text-charcoal font-sans overflow-x-hidden">
+
+  <!-- Floating Alpona Particles (Artistic Flair Theme) -->
+  <div class="fixed inset-0 pointer-events-none z-0 opacity-15">
+    <!-- Top Left Alpona Motif -->
+    <div class="absolute -top-12 -left-12 w-[350px] h-[350px] opacity-10 pointer-events-none text-vermillion">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+        <circle cx="50" cy="50" r="40" />
+        <circle cx="50" cy="50" r="30" stroke-dasharray="2 2" />
+        <path d="M50 10 L55 30 L75 35 L55 40 L50 60 L45 40 L25 35 L45 30 Z" />
+        <path d="M50 20 L53 33 L66 35 L53 37 L50 50 L47 37 L34 35 L47 33 Z" />
+      </svg>
+    </div>
+    <!-- Bottom Right Alpona Motif -->
+    <div class="absolute -bottom-12 -right-12 w-[350px] h-[350px] opacity-10 rotate-45 pointer-events-none text-vermillion">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+        <circle cx="50" cy="50" r="40" />
+        <path d="M50 5 C30 5 10 30 50 95 C90 30 70 5 50 5Z" />
+        <circle cx="50" cy="40" r="15" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER & GLASS NAVIGATION (Artistic Flair Theme) -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="navbar">
+    <div class="bg-white/40 backdrop-blur-md border-b border-gold/30 py-3 px-4 md:px-8">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 bg-vermillion rounded-full flex items-center justify-center border border-gold shadow-md group-hover:scale-105 transition-transform">
+            <svg class="w-8 h-8 text-gold" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M50 15c-3 10-10 18-20 22 10 3 17 12 20 23 3-11 10-20 20-23-10-4-17-12-20-22z" />
+              <path d="M50 35c-2 6-6 10-12 12 6 2 10 7 12 13 2-6 6-11 12-13-6-2-10-6-12-12z" opacity="0.8"/>
+              <circle cx="50" cy="50" r="5" fill="#FF6F00"/>
+            </svg>
+          </div>
+          <div>
+            <h1 class="text-charcoal text-lg md:text-xl font-bold font-bengali tracking-wide leading-tight" style="font-family: 'Times New Roman', serif;">অভিযাত্রী সংঘ</h1>
+            <p class="text-vermillion text-[10px] font-bold uppercase tracking-[0.2em] font-sans">Abhijatri Sangha</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">প্রচ্ছদ <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Home</span></a>
+          <a href="about.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">আমাদের কথা <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">About Us</span></a>
+          <a href="events.html" class="relative text-vermillion font-bold font-bengali text-base px-2 py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-vermillion after:rounded">উৎসব ও আয়োজন <span class="block text-[10px] text-center text-charcoal/50 font-sans tracking-wide">Events</span></a>
+          <a href="gallery.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">স্মৃতিচিত্র <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Gallery</span></a>
+          <a href="contact.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">যোগাযোগ <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Contact</span></a>
+          <a href="donate.html" class="bg-gradient-to-r from-vermillion to-saffron hover:from-saffron hover:to-vermillion text-white text-sm font-semibold font-bengali py-2 px-5 rounded-full border border-gold/50 shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">সহযোগিতা <span class="block text-[9px] text-center text-white/80 font-sans tracking-wide">Donate</span></a>
+        </nav>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-vermillion hover:text-saffron focus:outline-none" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="w-7 h-7"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Artistic Flair Theme) -->
+    <div id="mobile-menu" class="hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] bg-cream/95 backdrop-blur-lg z-40 border-t border-gold/20">
+      <div class="flex flex-col items-center justify-center h-full space-y-6 pb-20 px-6">
+        <a href="index.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">প্রচ্ছদ (Home)</a>
+        <a href="about.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">আমাদের কথা (About Us)</a>
+        <a href="events.html" class="text-vermillion font-bold font-bengali text-2xl border-b-2 border-vermillion pb-1 w-full text-center">উৎসব ও আয়োজন (Events)</a>
+        <a href="gallery.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">স্মৃতিচিত্র (Gallery)</a>
+        <a href="contact.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">যোগাযোগ (Contact)</a>
+        <a href="donate.html" class="w-full text-center bg-gradient-to-r from-vermillion to-saffron text-white font-semibold font-bengali py-3 rounded-full border border-gold/50">সহযোগিতা (Donate)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="relative pt-36 pb-16 bg-gradient-to-b from-crimsonDark to-vermillion text-white text-center">
+    <div class="absolute inset-0 bg-grid-overlay opacity-20"></div>
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-4">
+      <span class="text-gold font-bold uppercase tracking-widest text-xs border-b border-gold/40 pb-1" data-aos="fade-up">আমাদের ক্যালেন্ডার</span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold font-bengali text-cream" data-aos="fade-up" data-aos-delay="100">
+        উৎসব ও সামাজিক অনুষ্ঠানমালা
+      </h1>
+      <p class="text-gold font-bengali text-base sm:text-lg max-w-2xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+        বছরের প্রতি ঋতুতে আমাদের পূজা মণ্ডপ ও সমাজসেবামূলক উৎসবের উজ্জ্বল কোলাজ
+      </p>
+    </div>
+    <!-- Bottom wave -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none translate-y-1">
+      <svg class="relative block w-full h-[30px]" viewBox="0 0 1200 120" preserveAspectRatio="none" fill="#FDF6E3">
+        <path d="M0,0 C150,90 350,120 600,100 C850,80 1050,90 1200,0 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE FILTER BAR -->
+  <section class="py-8 px-4 md:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="inline-flex flex-wrap items-center justify-center bg-white border border-gold/25 p-2 rounded-2xl shadow-md gap-2" data-aos="zoom-in">
+        <button onclick="filterEvents('all')" id="btn-all" class="filter-btn active bg-vermillion text-white font-bengali px-5 py-2 rounded-xl text-sm font-semibold transition-all">
+          সকল উৎসব ও আয়োজন
+        </button>
+        <button onclick="filterEvents('religious')" id="btn-religious" class="filter-btn text-charcoal hover:bg-cream font-bengali px-5 py-2 rounded-xl text-sm font-medium transition-all">
+          ধর্মীয় পার্বন ও পূজা
+        </button>
+        <button onclick="filterEvents('cultural')" id="btn-cultural" class="filter-btn text-charcoal hover:bg-cream font-bengali px-5 py-2 rounded-xl text-sm font-medium transition-all">
+          সাংস্কৃতিক অনুষ্ঠান
+        </button>
+        <button onclick="filterEvents('social')" id="btn-social" class="filter-btn text-charcoal hover:bg-cream font-bengali px-5 py-2 rounded-xl text-sm font-medium transition-all">
+          সামাজিক ও মানবসেবামূলক উদ্যোগ
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS CARDS GRID -->
+  <section class="py-12 px-4 md:px-8 relative z-10 min-h-[600px]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="events-grid">
+        
+        <!-- Card 1: Durga Puja -->
+        <div class="event-card bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:border-vermillion flex flex-col justify-between group" data-category="religious" data-aos="fade-up">
+          <div class="relative h-48 bg-gradient-to-br from-crimsonDark to-vermillion p-6 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+            <div class="flex justify-between items-start z-10">
+              <span class="bg-gold text-charcoal font-bold text-[10px] uppercase tracking-wider px-2 py-1 rounded">প্রধান পূজা (Major Feast)</span>
+              <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center border border-white/20"><i data-lucide="sparkles" class="w-5 h-5 text-gold"></i></div>
+            </div>
+            <div class="z-10">
+              <span class="text-gold text-xs font-bold block uppercase tracking-widest mb-1">আশ্বিন মাস • Autumn</span>
+              <h3 class="text-2xl font-extrabold font-bengali">শারদীয় সর্বজনীন দুর্গোৎসব</h3>
+            </div>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center text-xs text-vermillion font-bold font-bengali bg-vermillion/5 p-2 rounded">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>তারিখ placeholder: মহাষষ্ঠী হইতে মহানবমী ও বিজয়া দশমী</span>
+              </div>
+              <p class="text-charcoal/80 font-bengali text-sm leading-relaxed">
+                আমাদের ক্লাবের সর্ববৃহৎ উৎসব। প্রতি বছর নতুন এবং সমাজ সচেনতামূলক থিম, অভিনব প্রতিমা এবং অপরূপ আলোকসজ্জায় সেজে ওঠে শশী ভূষণ মুখার্জী লেন। পুজো উপলক্ষে ভোগ বিতরণ, বস্ত্র বিতরণ এবং সাংস্কৃতিক উৎসব অনুষ্ঠিত হয়।
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+              <span class="text-charcoal/60 font-bengali">পূজা কমিটি: ২০২৬</span>
+              <span class="text-vermillion font-bengali uppercase tracking-wider">Heritage Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Kali Puja -->
+        <div class="event-card bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:border-vermillion flex flex-col justify-between group" data-category="religious" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative h-48 bg-gradient-to-br from-indigo-950 to-purple-950 p-6 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+            <div class="flex justify-between items-start z-10">
+              <span class="bg-gold text-charcoal font-bold text-[10px] uppercase tracking-wider px-2 py-1 rounded">মহোৎসব (Grand Festival)</span>
+              <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center border border-white/20"><i data-lucide="moon" class="w-5 h-5 text-gold"></i></div>
+            </div>
+            <div class="z-10">
+              <span class="text-gold text-xs font-bold block uppercase tracking-widest mb-1">কার্তিক মাস • Winter Entrance</span>
+              <h3 class="text-2xl font-extrabold font-bengali">শ্যামাপূজা ও অমাবস্যার উৎসব</h3>
+            </div>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center text-xs text-vermillion font-bold font-bengali bg-vermillion/5 p-2 rounded">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>তারিখ placeholder: কার্তিক অমাবস্যার পুণ্যতিথি</span>
+              </div>
+              <p class="text-charcoal/80 font-bengali text-sm leading-relaxed">
+                চতুর্দশী প্রদীপ ও দীপাবলির আলোর রোশনাইয়ের সাথে আমরা মা শ্যামার আরাধনা করি। নিশীথ রাতেই আয়োজিত হয় শাস্ত্রীয় কালীপূজা। পুজোর পরদিন হাজার হাজার ভক্তের মাঝে ঐতিহ্যবাহী খিচুড়ি ও বোঁদে ভোগ বিতরণ করা হয়।
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+              <span class="text-charcoal/60 font-bengali">ভোগ বিতরণ: বাৎসরিক</span>
+              <span class="text-vermillion font-bengali uppercase tracking-wider">Devotional Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Saraswati Puja -->
+        <div class="event-card bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:border-vermillion flex flex-col justify-between group" data-category="religious" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative h-48 bg-gradient-to-br from-saffron to-amber-600 p-6 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+            <div class="flex justify-between items-start z-10">
+              <span class="bg-gold text-charcoal font-bold text-[10px] uppercase tracking-wider px-2 py-1 rounded">ছাত্র উৎসব (Student Fest)</span>
+              <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center border border-white/20"><i data-lucide="book-open" class="w-5 h-5 text-white"></i></div>
+            </div>
+            <div class="z-10">
+              <span class="text-gold text-xs font-bold block uppercase tracking-widest mb-1">মাঘ মাস • Spring Festival</span>
+              <h3 class="text-2xl font-extrabold font-bengali">সরস্বতী পূজা ও অঞ্জলি</h3>
+            </div>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center text-xs text-vermillion font-bold font-bengali bg-vermillion/5 p-2 rounded">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>তারিখ placeholder: বসন্ত পঞ্চমী তিথি</span>
+              </div>
+              <p class="text-charcoal/80 font-bengali text-sm leading-relaxed">
+                বিদ্যার দেবী মা সরস্বতীর আরাধনায় মেতে ওঠে এলাকার কচিকাঁচারা। অঞ্জলি প্রদান, হাতেখড়ি এবং স্থানীয় ছাত্র-ছাত্রীদের সুন্দর আলপনা অঙ্কন ও তাৎক্ষণিক চিত্রাঙ্কন প্রতিযোগিতা এই উৎসবের প্রধান অঙ্গ।
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+              <span class="text-charcoal/60 font-bengali">ছাত্র আয়োজন: বাৎসরিক</span>
+              <span class="text-vermillion font-bengali uppercase tracking-wider">Educational Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Lakshmi Puja -->
+        <div class="event-card bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:border-vermillion flex flex-col justify-between group" data-category="religious" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative h-48 bg-gradient-to-br from-amber-600 to-yellow-700 p-6 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+            <div class="flex justify-between items-start z-10">
+              <span class="bg-gold text-charcoal font-bold text-[10px] uppercase tracking-wider px-2 py-1 rounded">গৃহ উৎসব (Auspicious Feast)</span>
+              <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center border border-white/20"><i data-lucide="award" class="w-5 h-5 text-gold"></i></div>
+            </div>
+            <div class="z-10">
+              <span class="text-gold text-xs font-bold block uppercase tracking-widest mb-1">আশ্বিন মাস • Autumn End</span>
+              <h3 class="text-2xl font-extrabold font-bengali">কোজাগরী লক্ষ্মীপূজা</h3>
+            </div>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center text-xs text-vermillion font-bold font-bengali bg-vermillion/5 p-2 rounded">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>তারিখ placeholder: কোজাগরী পূর্ণিমা তিথি</span>
+              </div>
+              <p class="text-charcoal/80 font-bengali text-sm leading-relaxed">
+                দুর্গোৎসব সমাপ্তির ঠিক পরেই কোজাগরী পূর্ণিমা তিথিতে ক্লাবে মা লক্ষ্মীর শান্ত রূপের আরাধনা করা হয়। ঐতিহ্যবাহী উপবাস এবং সুন্দরভাবে সাজানো লক্ষ্মীর সরা ও নৈবেদ্য নিবেদনের মধ্য দিয়ে পূজার শান্ত সমাপন ঘটে।
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+              <span class="text-charcoal/60 font-bengali">ভক্তি গীতি আসর</span>
+              <span class="text-vermillion font-bengali uppercase tracking-wider">Devotional Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Poila Boishakh -->
+        <div class="event-card bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:border-vermillion flex flex-col justify-between group" data-category="cultural" data-aos="fade-up" data-aos-delay="400">
+          <div class="relative h-48 bg-gradient-to-br from-red-700 to-saffron p-6 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+            <div class="flex justify-between items-start z-10">
+              <span class="bg-gold text-charcoal font-bold text-[10px] uppercase tracking-wider px-2 py-1 rounded">সাংস্কৃতিক (Heritage Cultural)</span>
+              <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center border border-white/20"><i data-lucide="music" class="w-5 h-5 text-white"></i></div>
+            </div>
+            <div class="z-10">
+              <span class="text-gold text-xs font-bold block uppercase tracking-widest mb-1">বৈশাখ মাস • Summer Opening</span>
+              <h3 class="text-2xl font-extrabold font-bengali">পয়লা বৈশাখ ও নববর্ষ উদযাপন</h3>
+            </div>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center text-xs text-vermillion font-bold font-bengali bg-vermillion/5 p-2 rounded">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>তারিখ placeholder: ১৫ই এপ্রিল (শুভ নববর্ষ)</span>
+              </div>
+              <p class="text-charcoal/80 font-bengali text-sm leading-relaxed">
+                বাঙালি নববর্ষ উপলক্ষে সকালে প্রভাতফেরি এবং সন্ধ্যায় একটি জমজমাট রবীন্দ্রসঙ্গীত ও ঐতিহ্যবাহী কবিগানের অনুষ্ঠান। পাড়ার প্রবীণ সদস্যদের শুভেচ্ছা জ্ঞাপন এবং মিষ্টিমুখ করানোর রেওয়াজ দীর্ঘদিনের।
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+              <span class="text-charcoal/60 font-bengali">সাংস্কৃতিক আসর</span>
+              <span class="text-vermillion font-bengali uppercase tracking-wider">Heritage Cultural</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Janmashtami -->
+        <div class="event-card bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:border-vermillion flex flex-col justify-between group" data-category="religious" data-aos="fade-up" data-aos-delay="500">
+          <div class="relative h-48 bg-gradient-to-br from-blue-900 to-indigo-950 p-6 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+            <div class="flex justify-between items-start z-10">
+              <span class="bg-gold text-charcoal font-bold text-[10px] uppercase tracking-wider px-2 py-1 rounded">ভক্তি উৎসব (Devotional Fest)</span>
+              <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center border border-white/20"><i data-lucide="sparkles" class="w-5 h-5 text-gold"></i></div>
+            </div>
+            <div class="z-10">
+              <span class="text-gold text-xs font-bold block uppercase tracking-widest mb-1">ভাদ্র মাস • Late Monsoon</span>
+              <h3 class="text-2xl font-extrabold font-bengali">শ্রীশ্রী জন্মাষ্টমী উৎসব</h3>
+            </div>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center text-xs text-vermillion font-bold font-bengali bg-vermillion/5 p-2 rounded">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>তারিখ placeholder: ভাদ্র মাসের কৃষ্ণাষ্টমী তিথি</span>
+              </div>
+              <p class="text-charcoal/80 font-bengali text-sm leading-relaxed">
+                ভগবান শ্রীকৃষ্ণের পবিত্র জন্মতিথি উপলক্ষে ক্লাবে বিশেষ পূজা, উপবাস ও ভজন সন্ধ্যার আয়োজন করা হয়। রাতে আয়োজিত হয় ঐতিহ্যবাহী দহি হান্ডি বা হাঁড়ি ভাঙার খেলা, যা এলাকার যুবকদের মধ্যে বিপুল উৎসাহ সৃষ্টি করে।
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+              <span class="text-charcoal/60 font-bengali">ভজন ও উপবাস</span>
+              <span class="text-vermillion font-bengali uppercase tracking-wider">Religious Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7: Diwali -->
+        <div class="event-card bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:border-vermillion flex flex-col justify-between group" data-category="religious" data-aos="fade-up" data-aos-delay="600">
+          <div class="relative h-48 bg-gradient-to-br from-amber-950 to-amber-900 p-6 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+            <div class="flex justify-between items-start z-10">
+              <span class="bg-gold text-charcoal font-bold text-[10px] uppercase tracking-wider px-2 py-1 rounded">দীপ উৎসব (Festival of Lights)</span>
+              <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center border border-white/20"><i data-lucide="flame" class="w-5 h-5 text-gold"></i></div>
+            </div>
+            <div class="z-10">
+              <span class="text-gold text-xs font-bold block uppercase tracking-widest mb-1">কার্তিক মাস • Festival of Lights</span>
+              <h3 class="text-2xl font-extrabold font-bengali">দীপাবলি ও আলোক উৎসব</h3>
+            </div>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center text-xs text-vermillion font-bold font-bengali bg-vermillion/5 p-2 rounded">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>তারিখ placeholder: কার্তিক অমাবস্যার পুণ্যতিথি</span>
+              </div>
+              <p class="text-charcoal/80 font-bengali text-sm leading-relaxed">
+                মন্দির ও ক্লাব প্রাঙ্গণ শত শত মাটির প্রদীপ ও মোমবাতির আলোয় সাজিয়ে তোলা হয়। আলোর উৎসবের এই পুণ্য সন্ধ্যায় ক্লাবের পক্ষ থেকে মিষ্টি বিতরণ এবং এলাকার দুঃস্থ শিশুদের মাঝে আনন্দ উপহার বিতরণ করা হয়।
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+              <span class="text-charcoal/60 font-bengali">আলোকসজ্জা ও আনন্দ</span>
+              <span class="text-vermillion font-bengali uppercase tracking-wider">Festival of Lights</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8: Social Welfare -->
+        <div class="event-card bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:border-vermillion flex flex-col justify-between group" data-category="social" data-aos="fade-up" data-aos-delay="700">
+          <div class="relative h-48 bg-gradient-to-br from-emerald-800 to-teal-900 p-6 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+            <div class="flex justify-between items-start z-10">
+              <span class="bg-gold text-charcoal font-bold text-[10px] uppercase tracking-wider px-2 py-1 rounded">মানবসেবা (Social Welfare)</span>
+              <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center border border-white/20"><i data-lucide="heart" class="w-5 h-5 text-white"></i></div>
+            </div>
+            <div class="z-10">
+              <span class="text-gold text-xs font-bold block uppercase tracking-widest mb-1">সারা বছর জুড়িয়া • Year Round</span>
+              <h3 class="text-2xl font-extrabold font-bengali">রক্তদান শিবির ও স্বাস্থ্য পরীক্ষা</h3>
+            </div>
+          </div>
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center text-xs text-vermillion font-bold font-bengali bg-vermillion/5 p-2 rounded">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>তারিখ placeholder: স্বাধীনতা দিবস ও প্রতি ত্রৈমাসিকে</span>
+              </div>
+              <p class="text-charcoal/80 font-bengali text-sm leading-relaxed">
+                দুঃস্থ মানুষের স্বার্থে বিনামূল্যে চক্ষু অপারেশন শিবির, ডায়াবেটিস পরীক্ষা এবং স্বেচ্ছায় রক্তদান শিবিরের আয়োজন। রক্ত সংকট দূরীকরণে আমাদের ক্লাবের সদস্যরা সর্বদাই প্রস্তুত এবং অগ্রণী ভূমিকা পালন করে।
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+              <span class="text-charcoal/60 font-bengali">হাসপাতাল সহায়তা</span>
+              <span class="text-emerald-800 font-bold uppercase tracking-wider">Social Service</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REVERENT QUOTE / ATMOSPHERE -->
+  <section class="py-16 px-4 md:px-8 bg-charcoal text-white relative text-center">
+    <div class="absolute inset-0 bg-grid-overlay opacity-15"></div>
+    <div class="max-w-4xl mx-auto relative z-10 space-y-6" data-aos="zoom-in">
+      <div class="w-16 h-16 bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><path fill=%22%23D4AF37%22 d=%22M50,15 L62,40 L90,40 L68,56 L77,82 L50,65 L23,82 L32,56 L10,40 L38,40 Z%22/></svg>')] bg-contain bg-no-repeat mx-auto opacity-75"></div>
+      <p class="text-xl sm:text-2xl md:text-3xl italic font-bengali leading-relaxed text-cream">
+        "উৎসব মানে শুধু আলোর রোশনাই নয়, উৎসব মানে সকলের হাতে হাত রেখে একসাথে এগিয়ে চলার শুভ অঙ্গীকার।"
+      </p>
+      <div class="text-gold uppercase tracking-widest text-xs font-bold font-sans">
+        — Abhijatri Sangha Committee
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-white pt-16 pb-8 border-t border-gold/20 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 pb-12 border-b border-white/10">
+        
+        <!-- Column 1: Info and Branding -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-vermillion rounded-full flex items-center justify-center border border-gold">
+              <svg class="w-6 h-6 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50 15c-3 10-10 18-20 22 10 3 17 12 20 23 3-11 10-20 20-23-10-4-17-12-20-22z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold font-bengali text-lg text-white">অভিযাত্রী সংঘ</h3>
+              <p class="text-gold text-xs font-semibold tracking-wider uppercase">Abhijatri Sangha</p>
+            </div>
+          </div>
+          <p class="text-cream/60 font-bengali text-sm leading-relaxed max-w-sm">
+            সালকিয়ার শশী ভূষণ মুখার্জী লেনে অবস্থিত আমাদের সুপ্রাচীন সমাজসেবী ও সাংস্কৃতিক সংগঠন। দুর্গাপূজা, রক্তদান শিবির ও অন্যান্য উৎসবের প্রাণকেন্দ্র।
+          </p>
+          <div class="text-xs text-cream/40 font-mono">
+            ESTD: 1964 • Salkia, Howrah
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold font-bengali text-base uppercase tracking-wider">দ্রুত লিঙ্কসমূহ</h4>
+          <ul class="space-y-2 font-bengali text-sm text-cream/80">
+            <li><a href="index.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> প্রচ্ছদ (Home)</a></li>
+            <li><a href="about.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> আমাদের কথা (About)</a></li>
+            <li><a href="events.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> উৎসবের তালিকা (Events)</a></li>
+            <li><a href="gallery.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> গ্যালারি (Gallery)</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> যোগাযোগ (Contact)</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold font-bengali text-base uppercase tracking-wider">ঠিকানা ও যোগাযোগ</h4>
+          <p class="text-cream/80 font-bengali text-sm leading-relaxed">
+            <strong class="text-white block font-sans">Abhijatri Sangha Office</strong>
+            শশী ভূষণ মুখার্জী লেন,<br>
+            সালকিয়া, হাওড়া-৭১১১০৬,<br>
+            পশ্চিমবঙ্গ, ভারত।
+          </p>
+          <div class="space-y-1 text-xs text-cream/60">
+            <p class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2 text-gold"></i> +৯১ ৩৩৩৩ ৩৩৩৩</p>
+            <p class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2 text-gold"></i> contact@abhijatrisangha.org</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social and Copyright bottom strip -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-cream/40 gap-4">
+        <div>
+          <p class="font-bengali text-center sm:text-left">© ২০২৬ অভিযাত্রী সংঘ। সর্বস্বত্ব সংরক্ষিত।</p>
+          <p class="text-[10px] text-center sm:text-left text-cream/30 mt-0.5 font-sans">Designed with deep Bengali cultural soul.</p>
+        </div>
+        
+        <!-- Social Icons -->
+        <div class="flex items-center space-x-4">
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="Facebook">
+            <i data-lucide="facebook" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="Instagram">
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="YouTube">
+            <i data-lucide="youtube" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- AOS Script, Lucide Script, and Core Logic -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-out'
+    });
+    lucide.createIcons();
+
+    // Event filtering logic
+    function filterEvents(category) {
+      // Manage active buttons styling
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('active', 'bg-vermillion', 'text-white');
+        btn.classList.add('text-charcoal', 'hover:bg-cream');
+      });
+
+      const clickedBtn = document.getElementById(`btn-${category}`);
+      clickedBtn.classList.remove('text-charcoal', 'hover:bg-cream');
+      clickedBtn.classList.add('active', 'bg-vermillion', 'text-white');
+
+      // Filter cards
+      const cards = document.querySelectorAll('.event-card');
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (category === 'all' || cardCat === category) {
+          card.style.display = 'flex';
+          card.setAttribute('data-aos', 'fade-up');
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      
+      // Refresh scroll animations
+      AOS.refresh();
+    }
+
+    // Mobile Navigation Drawer Toggle
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    mobileMenuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+      if (isHidden) {
+        mobileMenu.classList.remove("hidden");
+        mobileMenuBtn.innerHTML = '<i data-lucide="x" class="w-7 h-7"></i>';
+      } else {
+        mobileMenu.classList.add("hidden");
+        mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="w-7 h-7"></i>';
+      }
+      lucide.createIcons();
+    });
+  </script>
+
+</body>
+</html>

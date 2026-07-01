@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমাদের কথা • Abhijatri Sangha - Salkia, Howrah</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts for Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Configuration for Custom Bengali Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saffron: '#FF6F00',
+            vermillion: '#B71C1C',
+            crimsonDark: '#5E0808',
+            gold: '#D4AF37',
+            cream: '#FDF6E3',
+            charcoal: '#1A1A1A',
+            charcoalLight: '#2A2A2A'
+          },
+          fontFamily: {
+            bengali: ['Noto Serif Bengali', 'Times New Roman', 'serif'],
+            display: ['Georgia', 'Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style type="text/css">
+    .bg-grid-overlay {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1A1A1A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #B71C1C;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FF6F00;
+    }
+    .bengali-title {
+      font-family: 'Noto Serif Bengali', serif;
+    }
+    .display-title {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-cream text-charcoal font-sans overflow-x-hidden">
+
+  <!-- Floating Alpona Particles (Artistic Flair Theme) -->
+  <div class="fixed inset-0 pointer-events-none z-0 opacity-15">
+    <!-- Top Left Alpona Motif -->
+    <div class="absolute -top-12 -left-12 w-[350px] h-[350px] opacity-10 pointer-events-none text-vermillion">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+        <circle cx="50" cy="50" r="40" />
+        <circle cx="50" cy="50" r="30" stroke-dasharray="2 2" />
+        <path d="M50 10 L55 30 L75 35 L55 40 L50 60 L45 40 L25 35 L45 30 Z" />
+        <path d="M50 20 L53 33 L66 35 L53 37 L50 50 L47 37 L34 35 L47 33 Z" />
+      </svg>
+    </div>
+    <!-- Bottom Right Alpona Motif -->
+    <div class="absolute -bottom-12 -right-12 w-[350px] h-[350px] opacity-10 rotate-45 pointer-events-none text-vermillion">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+        <circle cx="50" cy="50" r="40" />
+        <path d="M50 5 C30 5 10 30 50 95 C90 30 70 5 50 5Z" />
+        <circle cx="50" cy="40" r="15" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER & GLASS NAVIGATION (Artistic Flair Theme) -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="navbar">
+    <div class="bg-white/40 backdrop-blur-md border-b border-gold/30 py-3 px-4 md:px-8">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 bg-vermillion rounded-full flex items-center justify-center border border-gold shadow-md group-hover:scale-105 transition-transform">
+            <svg class="w-8 h-8 text-gold" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M50 15c-3 10-10 18-20 22 10 3 17 12 20 23 3-11 10-20 20-23-10-4-17-12-20-22z" />
+              <path d="M50 35c-2 6-6 10-12 12 6 2 10 7 12 13 2-6 6-11 12-13-6-2-10-6-12-12z" opacity="0.8"/>
+              <circle cx="50" cy="50" r="5" fill="#FF6F00"/>
+            </svg>
+          </div>
+          <div>
+            <h1 class="text-charcoal text-lg md:text-xl font-bold font-bengali tracking-wide leading-tight" style="font-family: 'Times New Roman', serif;">অভিযাত্রী সংঘ</h1>
+            <p class="text-vermillion text-[10px] font-bold uppercase tracking-[0.2em] font-sans">Abhijatri Sangha</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">প্রচ্ছদ <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Home</span></a>
+          <a href="about.html" class="relative text-vermillion font-bold font-bengali text-base px-2 py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-vermillion after:rounded">আমাদের কথা <span class="block text-[10px] text-center text-charcoal/50 font-sans tracking-wide">About Us</span></a>
+          <a href="events.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">উৎসব ও আয়োজন <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Events</span></a>
+          <a href="gallery.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">স্মৃতিচিত্র <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Gallery</span></a>
+          <a href="contact.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">যোগাযোগ <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Contact</span></a>
+          <a href="donate.html" class="bg-gradient-to-r from-vermillion to-saffron hover:from-saffron hover:to-vermillion text-white text-sm font-semibold font-bengali py-2 px-5 rounded-full border border-gold/50 shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">সহযোগিতা <span class="block text-[9px] text-center text-white/80 font-sans tracking-wide">Donate</span></a>
+        </nav>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-vermillion hover:text-saffron focus:outline-none" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="w-7 h-7"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Artistic Flair Theme) -->
+    <div id="mobile-menu" class="hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] bg-cream/95 backdrop-blur-lg z-40 border-t border-gold/20">
+      <div class="flex flex-col items-center justify-center h-full space-y-6 pb-20 px-6">
+        <a href="index.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">প্রচ্ছদ (Home)</a>
+        <a href="about.html" class="text-vermillion font-bold font-bengali text-2xl border-b-2 border-vermillion pb-1 w-full text-center">আমাদের কথা (About Us)</a>
+        <a href="events.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">উৎসব ও আয়োজন (Events)</a>
+        <a href="gallery.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">স্মৃতিচিত্র (Gallery)</a>
+        <a href="contact.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">যোগাযোগ (Contact)</a>
+        <a href="donate.html" class="w-full text-center bg-gradient-to-r from-vermillion to-saffron text-white font-semibold font-bengali py-3 rounded-full border border-gold/50">সহযোগিতা (Donate)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="relative pt-36 pb-16 bg-gradient-to-b from-crimsonDark to-vermillion text-white text-center">
+    <div class="absolute inset-0 bg-grid-overlay opacity-20"></div>
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-4">
+      <span class="text-gold font-bold uppercase tracking-widest text-xs border-b border-gold/40 pb-1" data-aos="fade-up">পরিচিতি ও ইতিবৃত্ত</span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold font-bengali text-cream" data-aos="fade-up" data-aos-delay="100">
+        আমাদের সম্পর্কে (About Us)
+      </h1>
+      <p class="text-gold font-bengali text-base sm:text-lg max-w-xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+        "স্থাপিত ১৯৬৪ • সুদীর্ঘ ছয় দশকের ঐতিহ্যবাহী সামাজিক ও সাংস্কৃতিক সংগঠন"
+      </p>
+    </div>
+    <!-- Bottom wavy boundary decorative SVG -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none translate-y-1">
+      <svg class="relative block w-full h-[30px]" viewBox="0 0 1200 120" preserveAspectRatio="none" fill="#FDF6E3">
+        <path d="M0,0 C150,90 350,120 600,100 C850,80 1050,90 1200,0 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SECTION 1: CLUB HISTORY -->
+  <section class="py-16 px-4 md:px-8 relative z-10">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- History Text -->
+        <div class="lg:col-span-7 space-y-6" data-aos="fade-right">
+          <div class="inline-flex items-center space-x-2 text-vermillion font-bold text-sm tracking-wider uppercase">
+            <span class="w-1.5 h-1.5 bg-saffron rounded-full"></span>
+            <span class="font-bengali">আমাদের সুবর্ণ যাত্রা</span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold font-bengali text-charcoal">
+            ৬২ বছরের সাংস্কৃতিক গৌরবের ইতিহাস
+          </h2>
+          <div class="w-16 h-1 bg-vermillion rounded"></div>
+
+          <p class="text-charcoal/90 font-bengali leading-relaxed text-base sm:text-lg">
+            সালকিয়া অঞ্চলের স্থানীয় যুবসমাজকে সঠিক দিশা দেখানো, শিক্ষা ও ক্রীড়ার উন্নতি এবং সনাতনী সংস্কৃতিকে সমুন্নত রাখার লক্ষ্যে ১৯৬৪ সালে <strong class="text-vermillion">অভিযাত্রী সংঘের</strong> প্রতিষ্ঠা হয়। মাত্র কয়েকজন উদ্যমী তরুণের হাত ধরে যে জয়যাত্রা শুরু হয়েছিল, আজ তা মহীরুহে পরিণত হয়েছে।
+          </p>
+          <p class="text-charcoal/80 font-bengali leading-relaxed text-sm sm:text-base">
+            শুরুর দিকে একটি ছোট ঘরে পাড়ার ক্লাব হিসেবে পথচলা শুরু হয়। এরপর স্বাধীনতা দিবস পালন, সরস্বতী পূজার মধ্য দিয়ে সংস্কৃতির চর্চা শুরু করা হয়। আশির দশকে যখন ক্লাবে দুর্গোৎসব প্রবর্তিত হয়, তখন থেকে এটি কলকাতার উপনগরী অঞ্চলের প্রথম সারির শারদোৎসব হিসেবে পরিচিতি পেতে শুরু করে। আমাদের প্রতিটি উৎসবের নেপথ্যে থাকে পাড়ার সকল স্তরের মানুষের সক্রিয় অংশগ্রহণ এবং গভীর সম্প্রীতি।
+          </p>
+          <p class="text-charcoal/80 font-bengali leading-relaxed text-sm sm:text-base">
+            অভিযাত্রী সংঘ শুধু পুজোর চার দিন মণ্ডপ সজ্জা নিয়ে ব্যস্ত থাকে না, সারা বছর জুড়েই সমাজসেবামূলক কাজে নিজেদের নিয়োজিত রাখে। দুঃস্থ ছাত্র-ছাত্রীদের বই ও পোশাক বিতরণ, বাৎসরিক শীতবস্ত্র প্রদান, রক্তদান শিবির আয়োজন ও প্রাকৃতিক দুর্যোগে দুর্গতদের পাশে দাঁড়ানো আমাদের ব্রত।
+          </p>
+        </div>
+
+        <!-- Decorative History Visual Grid -->
+        <div class="lg:col-span-5 relative" data-aos="fade-left">
+          <div class="absolute -inset-4 bg-gradient-to-tr from-saffron to-gold rounded-2xl opacity-15 transform rotate-3"></div>
+          
+          <div class="relative bg-charcoal text-white rounded-3xl p-8 border border-gold/30 shadow-2xl space-y-6 bg-grid-overlay">
+            <div class="flex items-center justify-between border-b border-gold/20 pb-4">
+              <span class="display-title text-4xl font-extrabold text-gold">1964</span>
+              <span class="font-bengali text-xs text-cream/60">প্রতিষ্ঠা বর্ষ (Foundation Year)</span>
+            </div>
+            
+            <div class="space-y-4 font-bengali">
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-vermillion rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold text-white mt-1">১</div>
+                <p class="text-cream/90 text-sm">সালকিয়ার ঐতিহ্যবাহী শশী ভূষণ মুখার্জী লেনে স্থায়ী কার্যালয় নির্মাণ।</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-vermillion rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold text-white mt-1">২</div>
+                <p class="text-cream/90 text-sm">আশির দশকে মহাধুমধামের সাথে সর্বজনীন শারদোৎসবের সূচনা।</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-vermillion rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold text-white mt-1">৩</div>
+                <p class="text-cream/90 text-sm">সমাজসেবায় অগ্রণী অবদানের জন্য একাধিকবার জেলা প্রশাসন ও অন্যান্য সংস্থায় সম্মানিত।</p>
+              </div>
+            </div>
+
+            <!-- Fine Print Motif -->
+            <div class="pt-4 border-t border-gold/10 text-center">
+              <p class="text-[10px] text-gold uppercase tracking-widest font-sans font-bold">Pride of Salkia • Howrah</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 2: MISSION & VISION (BENTO GRID STYLE) -->
+  <section class="py-16 px-4 md:px-8 bg-charcoal text-white relative">
+    <div class="absolute inset-0 bg-grid-overlay pointer-events-none opacity-10"></div>
+    <div class="max-w-6xl mx-auto relative z-10">
+      
+      <div class="text-center mb-16">
+        <span class="text-gold uppercase font-bold tracking-widest text-xs block mb-2" data-aos="fade-up">আমাদের লক্ষ্য ও উদ্দেশ্য</span>
+        <h2 class="text-3xl md:text-4xl font-bold font-bengali text-cream leading-tight" data-aos="fade-up" data-aos-delay="100">
+          সংস্কৃতির বিকাশ ও সমাজ সংস্কারে অঙ্গীকারবদ্ধ
+        </h2>
+        <div class="w-20 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Bento Grid for Mission Statements -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Mission Card 1: Culture -->
+        <div class="bg-gradient-to-b from-crimsonDark to-charcoal border border-gold/15 p-8 rounded-2xl hover:border-gold/50 transition-all group" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 bg-vermillion rounded-xl flex items-center justify-center text-gold mb-6 border border-gold/20 group-hover:scale-110 transition-transform">
+            <i data-lucide="palette" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold font-bengali text-cream mb-3">সংস্কৃতির সংরক্ষণ</h3>
+          <p class="text-cream/70 font-bengali text-sm leading-relaxed">
+            বাংলার সমৃদ্ধ লোকশিল্প, শাস্ত্রীয় পূজা পদ্ধতি এবং বৈচিত্র্যময় উৎসবের সংরক্ষণ ও নতুন প্রজন্মের কাছে পৌঁছে দেওয়ার প্রয়াস চালিয়ে যাওয়া।
+          </p>
+        </div>
+
+        <!-- Mission Card 2: Social Welfare -->
+        <div class="bg-gradient-to-b from-charcoalLight to-charcoal border border-gold/15 p-8 rounded-2xl hover:border-gold/50 transition-all group" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 bg-saffron rounded-xl flex items-center justify-center text-white mb-6 border border-gold/20 group-hover:scale-110 transition-transform">
+            <i data-lucide="hand-helping" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold font-bengali text-cream mb-3">নিরলস সমাজসেবা</h3>
+          <p class="text-cream/70 font-bengali text-sm leading-relaxed">
+            অসহায় মানুষদের পাশে দাঁড়ানো, চিকিৎসাসেবা প্রদান, রক্তদান কর্মসূচী পালন ও দুর্যোগ মোকাবিলায় সশরীরে অংশগ্রহণ করে সামাজিক দায়বদ্ধতা পালন।
+          </p>
+        </div>
+
+        <!-- Mission Card 3: Youth Mentorship -->
+        <div class="bg-gradient-to-b from-amber-950 to-charcoal border border-gold/15 p-8 rounded-2xl hover:border-gold/50 transition-all group" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 bg-emerald-900 rounded-xl flex items-center justify-center text-gold mb-6 border border-gold/20 group-hover:scale-110 transition-transform">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold font-bengali text-cream mb-3">যুব উন্নয়ন ও ক্রীড়া</h3>
+          <p class="text-cream/70 font-bengali text-sm leading-relaxed">
+            তরুণ প্রজন্মকে মোবাইল আসক্তি ও অপসংস্কৃতি থেকে দূরে রাখতে বিভিন্ন ক্রীড়া ও গঠনমূলক সমাজসেবায় নিয়োজিত রাখা।
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3: COMMITTEE MEMBERS (ELEGANT GRID DESIGN) -->
+  <section class="py-20 px-4 md:px-8 bg-cream relative z-10">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-16">
+        <span class="text-vermillion uppercase font-bold tracking-widest text-xs block mb-2" data-aos="fade-up">আমাদের চালিকাশক্তি</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-charcoal font-bengali" data-aos="fade-up" data-aos-delay="100">
+          কার্যকরী কমিটির সম্মানিত সদস্যবৃন্দ (২০২৫ - ২০২৬)
+        </h2>
+        <p class="text-charcoal/60 mt-2 font-sans tracking-widest uppercase text-xs" data-aos="fade-up" data-aos-delay="150">Executive Committee Members</p>
+        <div class="w-20 h-1 bg-vermillion mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Committee Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Member 1 -->
+        <div class="bg-white border border-gold/25 rounded-2xl p-6 text-center shadow-lg hover:border-vermillion transition-all transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-20 h-20 bg-gradient-to-tr from-vermillion to-saffron rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold font-bengali shadow-md mb-4 border-2 border-gold">
+            প
+          </div>
+          <h3 class="text-lg font-bold font-bengali text-charcoal">পার্থসারথী সেন</h3>
+          <p class="text-vermillion font-bold font-bengali text-xs uppercase tracking-wider">সভাপতি (President)</p>
+          <div class="w-10 h-[2px] bg-gold/50 mx-auto my-3"></div>
+          <p class="text-xs text-charcoal/60 font-bengali">অবসরপ্রাপ্ত অধ্যাপক ও সমাজসেবী। সুদীর্ঘ ৩০ বছর ধরে ক্লাবের সেবায় নিয়োজিত।</p>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="bg-white border border-gold/25 rounded-2xl p-6 text-center shadow-lg hover:border-vermillion transition-all transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-20 h-20 bg-gradient-to-tr from-vermillion to-saffron rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold font-bengali shadow-md mb-4 border-2 border-gold">
+            অ
+          </div>
+          <h3 class="text-lg font-bold font-bengali text-charcoal">অমিতাভ রায়</h3>
+          <p class="text-vermillion font-bold font-bengali text-xs uppercase tracking-wider">সাধারণ সম্পাদক (Secretary)</p>
+          <div class="w-10 h-[2px] bg-gold/50 mx-auto my-3"></div>
+          <p class="text-xs text-charcoal/60 font-bengali">বিশিষ্ট ব্যবসায়ী ও সমাজকর্মী। ক্লাবের বার্ষিক শারদোৎসবের প্রধান সমন্বয়ক।</p>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="bg-white border border-gold/25 rounded-2xl p-6 text-center shadow-lg hover:border-vermillion transition-all transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-20 h-20 bg-gradient-to-tr from-vermillion to-saffron rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold font-bengali shadow-md mb-4 border-2 border-gold">
+            স
+          </div>
+          <h3 class="text-lg font-bold font-bengali text-charcoal">সঞ্জয় মুখার্জী</h3>
+          <p class="text-vermillion font-bold font-bengali text-xs uppercase tracking-wider">কোষাধ্যক্ষ (Treasurer)</p>
+          <div class="w-10 h-[2px] bg-gold/50 mx-auto my-3"></div>
+          <p class="text-xs text-charcoal/60 font-bengali">আয়কর উপদেষ্টা। নিখুঁত হিসেব ও বার্ষিক বাজেট ব্যবস্থাপনার দায়িত্বে অবিচল।</p>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="bg-white border border-gold/25 rounded-2xl p-6 text-center shadow-lg hover:border-vermillion transition-all transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-20 h-20 bg-gradient-to-tr from-vermillion to-saffron rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold font-bengali shadow-md mb-4 border-2 border-gold">
+            ব
+          </div>
+          <h3 class="text-lg font-bold font-bengali text-charcoal">বিশ্বজিৎ দত্ত</h3>
+          <p class="text-vermillion font-bold font-bengali text-xs uppercase tracking-wider">পূজা ও সাংস্কৃতিক সম্পাদক</p>
+          <div class="w-10 h-[2px] bg-gold/50 mx-auto my-3"></div>
+          <p class="text-xs text-charcoal/60 font-bengali">স্থানীয় সাংস্কৃতিক সংগঠক। মণ্ডপ থিম এবং আলো-আবহ পরিকল্পনার রূপকার।</p>
+        </div>
+
+      </div>
+
+      <!-- Advisory Note banner -->
+      <div class="mt-12 bg-white border border-gold/20 rounded-2xl p-6 shadow-md max-w-4xl mx-auto" data-aos="fade-up">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+          <div class="flex items-center space-x-3">
+            <i data-lucide="shield-check" class="w-8 h-8 text-saffron flex-shrink-0"></i>
+            <div>
+              <h4 class="font-bold font-bengali text-charcoal text-base">উপদেষ্টা মণ্ডলী ও প্রবীণ সদস্যবৃন্দ</h4>
+              <p class="text-charcoal/60 font-bengali text-xs">আমাদের প্রতিটি পদক্ষেপে প্রবীণদের দীর্ঘ অভিজ্ঞতা ও শুভাশিসই মূল ভরসা।</p>
+            </div>
+          </div>
+          <div class="text-xs font-mono bg-cream py-1.5 px-3 rounded text-vermillion border border-gold/30">
+            Total Executive Members: 21 Active
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-white pt-16 pb-8 border-t border-gold/20 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 pb-12 border-b border-white/10">
+        
+        <!-- Column 1: Info and Branding -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-vermillion rounded-full flex items-center justify-center border border-gold">
+              <svg class="w-6 h-6 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50 15c-3 10-10 18-20 22 10 3 17 12 20 23 3-11 10-20 20-23-10-4-17-12-20-22z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold font-bengali text-lg text-white">অভিযাত্রী সংঘ</h3>
+              <p class="text-gold text-xs font-semibold tracking-wider uppercase">Abhijatri Sangha</p>
+            </div>
+          </div>
+          <p class="text-cream/60 font-bengali text-sm leading-relaxed max-w-sm">
+            সালকিয়ার শশী ভূষণ মুখার্জী লেনে অবস্থিত আমাদের সুপ্রাচীন সমাজсеবী ও সাংস্কৃতিক সংগঠন। দুর্গাপূজা, রক্তদান শিবির ও অন্যান্য উৎসবের প্রাণকেন্দ্র।
+          </p>
+          <div class="text-xs text-cream/40 font-mono">
+            ESTD: 1964 • Salkia, Howrah
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold font-bengali text-base uppercase tracking-wider">দ্রুত লিঙ্কসমূহ</h4>
+          <ul class="space-y-2 font-bengali text-sm text-cream/80">
+            <li><a href="index.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> প্রচ্ছদ (Home)</a></li>
+            <li><a href="about.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> আমাদের কথা (About)</a></li>
+            <li><a href="events.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> উৎসবের তালিকা (Events)</a></li>
+            <li><a href="gallery.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> গ্যালারি (Gallery)</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> যোগাযোগ (Contact)</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold font-bengali text-base uppercase tracking-wider">ঠিকানা ও যোগাযোগ</h4>
+          <p class="text-cream/80 font-bengali text-sm leading-relaxed">
+            <strong class="text-white block font-sans">Abhijatri Sangha Office</strong>
+            শশী ভূষণ মুখার্জী লেন,<br>
+            সালকিয়া, হাওড়া-৭১১১০৬,<br>
+            পশ্চিমবঙ্গ, ভারত।
+          </p>
+          <div class="space-y-1 text-xs text-cream/60">
+            <p class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2 text-gold"></i> +৯১ ৩৩৩৩ ৩৩৩৩</p>
+            <p class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2 text-gold"></i> contact@abhijatrisangha.org</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social and Copyright bottom strip -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-cream/40 gap-4">
+        <div>
+          <p class="font-bengali text-center sm:text-left">© ২০২৬ অভিযাত্রী সংঘ। সর্বস্বত্ব সংরক্ষিত।</p>
+          <p class="text-[10px] text-center sm:text-left text-cream/30 mt-0.5 font-sans">Designed with deep Bengali cultural soul.</p>
+        </div>
+        
+        <!-- Social Icons -->
+        <div class="flex items-center space-x-4">
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="Facebook">
+            <i data-lucide="facebook" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="Instagram">
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="YouTube">
+            <i data-lucide="youtube" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- AOS Script, Lucide Script, and Core Logic -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-out'
+    });
+    lucide.createIcons();
+
+    // Mobile Navigation Drawer Toggle
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    mobileMenuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+      if (isHidden) {
+        mobileMenu.classList.remove("hidden");
+        mobileMenuBtn.innerHTML = '<i data-lucide="x" class="w-7 h-7"></i>';
+      } else {
+        mobileMenu.classList.add("hidden");
+        mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="w-7 h-7"></i>';
+      }
+      lucide.createIcons();
+    });
+  </script>
+
+</body>
+</html>

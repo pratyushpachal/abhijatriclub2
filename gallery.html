@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>স্মৃতিচিত্র গ্যালারি • Abhijatri Sangha - Salkia, Howrah</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts for Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Configuration for Custom Bengali Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saffron: '#FF6F00',
+            vermillion: '#B71C1C',
+            crimsonDark: '#5E0808',
+            gold: '#D4AF37',
+            cream: '#FDF6E3',
+            charcoal: '#1A1A1A',
+            charcoalLight: '#2A2A2A'
+          },
+          fontFamily: {
+            bengali: ['Noto Serif Bengali', 'Times New Roman', 'serif'],
+            display: ['Georgia', 'Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style type="text/css">
+    .bg-grid-overlay {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1A1A1A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #B71C1C;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FF6F00;
+    }
+    .bengali-title {
+      font-family: 'Noto Serif Bengali', serif;
+    }
+    .display-title {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-cream text-charcoal font-sans overflow-x-hidden">
+
+  <!-- Floating Alpona Particles (Artistic Flair Theme) -->
+  <div class="fixed inset-0 pointer-events-none z-0 opacity-15">
+    <!-- Top Left Alpona Motif -->
+    <div class="absolute -top-12 -left-12 w-[350px] h-[350px] opacity-10 pointer-events-none text-vermillion">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+        <circle cx="50" cy="50" r="40" />
+        <circle cx="50" cy="50" r="30" stroke-dasharray="2 2" />
+        <path d="M50 10 L55 30 L75 35 L55 40 L50 60 L45 40 L25 35 L45 30 Z" />
+        <path d="M50 20 L53 33 L66 35 L53 37 L50 50 L47 37 L34 35 L47 33 Z" />
+      </svg>
+    </div>
+    <!-- Bottom Right Alpona Motif -->
+    <div class="absolute -bottom-12 -right-12 w-[350px] h-[350px] opacity-10 rotate-45 pointer-events-none text-vermillion">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+        <circle cx="50" cy="50" r="40" />
+        <path d="M50 5 C30 5 10 30 50 95 C90 30 70 5 50 5Z" />
+        <circle cx="50" cy="40" r="15" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER & GLASS NAVIGATION (Artistic Flair Theme) -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="navbar">
+    <div class="bg-white/40 backdrop-blur-md border-b border-gold/30 py-3 px-4 md:px-8">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 bg-vermillion rounded-full flex items-center justify-center border border-gold shadow-md group-hover:scale-105 transition-transform">
+            <svg class="w-8 h-8 text-gold" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M50 15c-3 10-10 18-20 22 10 3 17 12 20 23 3-11 10-20 20-23-10-4-17-12-20-22z" />
+              <path d="M50 35c-2 6-6 10-12 12 6 2 10 7 12 13 2-6 6-11 12-13-6-2-10-6-12-12z" opacity="0.8"/>
+              <circle cx="50" cy="50" r="5" fill="#FF6F00"/>
+            </svg>
+          </div>
+          <div>
+            <h1 class="text-charcoal text-lg md:text-xl font-bold font-bengali tracking-wide leading-tight" style="font-family: 'Times New Roman', serif;">অভিযাত্রী সংঘ</h1>
+            <p class="text-vermillion text-[10px] font-bold uppercase tracking-[0.2em] font-sans">Abhijatri Sangha</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">প্রচ্ছদ <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Home</span></a>
+          <a href="about.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">আমাদের কথা <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">About Us</span></a>
+          <a href="events.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">উৎসব ও আয়োজন <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Events</span></a>
+          <a href="gallery.html" class="relative text-vermillion font-bold font-bengali text-base px-2 py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-vermillion after:rounded">স্মৃতিচিত্র <span class="block text-[10px] text-center text-charcoal/50 font-sans tracking-wide">Gallery</span></a>
+          <a href="contact.html" class="group text-charcoal/90 hover:text-vermillion transition-colors font-medium font-bengali text-base px-2 py-1">যোগাযোগ <span class="block text-[10px] text-center text-charcoal/40 group-hover:text-vermillion/60 font-sans tracking-wide">Contact</span></a>
+          <a href="donate.html" class="bg-gradient-to-r from-vermillion to-saffron hover:from-saffron hover:to-vermillion text-white text-sm font-semibold font-bengali py-2 px-5 rounded-full border border-gold/50 shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">সহযোগিতা <span class="block text-[9px] text-center text-white/80 font-sans tracking-wide">Donate</span></a>
+        </nav>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-vermillion hover:text-saffron focus:outline-none" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="w-7 h-7"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Artistic Flair Theme) -->
+    <div id="mobile-menu" class="hidden fixed top-[73px] left-0 w-full h-[calc(100vh-73px)] bg-cream/95 backdrop-blur-lg z-40 border-t border-gold/20">
+      <div class="flex flex-col items-center justify-center h-full space-y-6 pb-20 px-6">
+        <a href="index.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">প্রচ্ছদ (Home)</a>
+        <a href="about.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">আমাদের কথা (About Us)</a>
+        <a href="events.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">উৎসব ও আয়োজন (Events)</a>
+        <a href="gallery.html" class="text-vermillion font-bold font-bengali text-2xl border-b-2 border-vermillion pb-1 w-full text-center">স্মৃতিচিত্র (Gallery)</a>
+        <a href="contact.html" class="text-charcoal hover:text-vermillion font-medium font-bengali text-xl w-full text-center">যোগাযোগ (Contact)</a>
+        <a href="donate.html" class="w-full text-center bg-gradient-to-r from-vermillion to-saffron text-white font-semibold font-bengali py-3 rounded-full border border-gold/50">সহযোগিতা (Donate)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="relative pt-36 pb-16 bg-gradient-to-b from-crimsonDark to-vermillion text-white text-center">
+    <div class="absolute inset-0 bg-grid-overlay opacity-20"></div>
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-4">
+      <span class="text-gold font-bold uppercase tracking-widest text-xs border-b border-gold/40 pb-1" data-aos="fade-up">ফটো গ্যালারি</span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold font-bengali text-cream" data-aos="fade-up" data-aos-delay="100">
+        উৎসবের আনন্দময় মুহূর্তসমূহ
+      </h1>
+      <p class="text-gold font-bengali text-base sm:text-lg max-w-2xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+        বিগত বছরগুলোতে শশী ভূষণ মুখার্জী লেনে উথলে ওঠা ভক্তি ও সম্প্রীতির ফ্রেমবন্দী টুকরো কোলাজ
+      </p>
+    </div>
+    <!-- Bottom wave -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none translate-y-1">
+      <svg class="relative block w-full h-[30px]" viewBox="0 0 1200 120" preserveAspectRatio="none" fill="#FDF6E3">
+        <path d="M0,0 C150,90 350,120 600,100 C850,80 1050,90 1200,0 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- GALLERY FILTERS -->
+  <section class="py-8 px-4 md:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="inline-flex flex-wrap items-center justify-center bg-white border border-gold/25 p-2 rounded-2xl shadow-md gap-2" data-aos="zoom-in">
+        <button onclick="filterGallery('all')" id="gbtn-all" class="gfilter-btn active bg-vermillion text-white font-bengali px-5 py-2 rounded-xl text-sm font-semibold transition-all">
+          সব ছবি (All Photos)
+        </button>
+        <button onclick="filterGallery('durga')" id="gbtn-durga" class="gfilter-btn text-charcoal hover:bg-cream font-bengali px-5 py-2 rounded-xl text-sm font-medium transition-all">
+          দুর্গাপূজা স্মৃতি
+        </button>
+        <button onclick="filterGallery('kali')" id="gbtn-kali" class="gfilter-btn text-charcoal hover:bg-cream font-bengali px-5 py-2 rounded-xl text-sm font-medium transition-all">
+          শ্যামাপূজা ও দীপাবলি
+        </button>
+        <button onclick="filterGallery('social')" id="gbtn-social" class="gfilter-btn text-charcoal hover:bg-cream font-bengali px-5 py-2 rounded-xl text-sm font-medium transition-all">
+          সামাজিক ও রক্তদান কর্মসূচী
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY GRID -->
+  <section class="py-12 px-4 md:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
+        
+        <!-- Photo 1: Durga Idol -->
+        <div class="gallery-item bg-white border border-gold/20 p-4 rounded-3xl shadow-lg hover:shadow-2xl transition-all hover:border-vermillion group cursor-pointer" data-category="durga" data-aos="fade-up">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-crimsonDark via-vermillion to-charcoal flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors z-10"></div>
+            <!-- Decorative SVG as realistic mockup placeholder of Durga Maa -->
+            <svg class="w-24 h-24 text-gold/30 group-hover:scale-110 transition-transform z-10" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M50 15c-15 0-25 15-25 35 0 15 10 30 25 35 15-5 25-20 25-35 0-20-10-35-25-35zm0 10c8 0 15 10 15 25s-7 25-15 25-15-10-15-25 7-25 15-25z"/>
+              <path d="M40 45h20v5H40z M45 35h10v3H45z" opacity="0.7"/>
+            </svg>
+            <div class="absolute top-4 right-4 bg-charcoal/80 text-gold p-2.5 rounded-full border border-gold/20 opacity-0 group-hover:opacity-100 transition-opacity z-20">
+              <i data-lucide="zoom-in" class="w-5 h-5"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 bg-vermillion text-white text-xs font-bold px-2 py-1 rounded border border-gold z-20 font-bengali">দুর্গাপূজা ২০২৫</div>
+          </div>
+          <div class="pt-4 text-center">
+            <h3 class="font-bold font-bengali text-charcoal text-lg">জগন্মাতা প্রতিমা শ্রীবিগ্রহ দর্শন</h3>
+            <p class="text-xs text-charcoal/60 font-bengali mt-1">স্বর্ণালঙ্কারে ভূষিতা দেবী প্রতিমার শান্ত বরাভয় রূপ</p>
+          </div>
+        </div>
+
+        <!-- Photo 2: Dhunuchi Arati -->
+        <div class="gallery-item bg-white border border-gold/20 p-4 rounded-3xl shadow-lg hover:shadow-2xl transition-all hover:border-vermillion group cursor-pointer" data-category="durga" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-saffron via-vermillion to-charcoal flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors z-10"></div>
+            <!-- Dhunuchi incense burner visual mockup SVG -->
+            <svg class="w-20 h-20 text-gold/30 group-hover:scale-110 transition-transform z-10" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M50 20c-5 0-10 10-10 20h20c0-10-5-20-10-20zm-20 30h40v10l-15 20h-10l-15-20V50z"/>
+            </svg>
+            <div class="absolute top-4 right-4 bg-charcoal/80 text-gold p-2.5 rounded-full border border-gold/20 opacity-0 group-hover:opacity-100 transition-opacity z-20">
+              <i data-lucide="zoom-in" class="w-5 h-5"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 bg-vermillion text-white text-xs font-bold px-2 py-1 rounded border border-gold z-20 font-bengali">মহাষ্টমী আরতি</div>
+          </div>
+          <div class="pt-4 text-center">
+            <h3 class="font-bold font-bengali text-charcoal text-lg">সন্ধ্যাপূজার ধুনুচি আরতি</h3>
+            <p class="text-xs text-charcoal/60 font-bengali mt-1">মহাধূপ ও ঢাকের তালে তালে যুবকদের ধুনুচি নৃত্য</p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Sindur Khela -->
+        <div class="gallery-item bg-white border border-gold/20 p-4 rounded-3xl shadow-lg hover:shadow-2xl transition-all hover:border-vermillion group cursor-pointer" data-category="durga" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-vermillion to-[#400202] flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors z-10"></div>
+            <svg class="w-20 h-20 text-gold/30 group-hover:scale-110 transition-transform z-10" viewBox="0 0 100 100" fill="currentColor">
+              <circle cx="50" cy="50" r="25" fill="none" stroke="currentColor" stroke-width="5"/>
+              <path d="M50 15v70 M15 50h70" stroke="currentColor" stroke-width="3"/>
+            </svg>
+            <div class="absolute top-4 right-4 bg-charcoal/80 text-gold p-2.5 rounded-full border border-gold/20 opacity-0 group-hover:opacity-100 transition-opacity z-20">
+              <i data-lucide="zoom-in" class="w-5 h-5"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 bg-vermillion text-white text-xs font-bold px-2 py-1 rounded border border-gold z-20 font-bengali">বিজয়া দশমী</div>
+          </div>
+          <div class="pt-4 text-center">
+            <h3 class="font-bold font-bengali text-charcoal text-lg">দশমীর ঐতিহ্যবাহী সিঁদুর খেলা</h3>
+            <p class="text-xs text-charcoal/60 font-bengali mt-1">মা দুর্গাকে অশ্রুসজল বিদায় ও সধবা মহিলাদের বরণ</p>
+          </div>
+        </div>
+
+        <!-- Photo 4: Kali Puja Pandal Light -->
+        <div class="gallery-item bg-white border border-gold/20 p-4 rounded-3xl shadow-lg hover:shadow-2xl transition-all hover:border-vermillion group cursor-pointer" data-category="kali" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-indigo-950 via-purple-950 to-charcoal flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors z-10"></div>
+            <svg class="w-20 h-20 text-gold/30 group-hover:scale-110 transition-transform z-10" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M20 50l30-30 30 30-30 30z"/>
+            </svg>
+            <div class="absolute top-4 right-4 bg-charcoal/80 text-gold p-2.5 rounded-full border border-gold/20 opacity-0 group-hover:opacity-100 transition-opacity z-20">
+              <i data-lucide="zoom-in" class="w-5 h-5"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 bg-vermillion text-white text-xs font-bold px-2 py-1 rounded border border-gold z-20 font-bengali">শ্যামাপূজা ২০২৫</div>
+          </div>
+          <div class="pt-4 text-center">
+            <h3 class="font-bold font-bengali text-charcoal text-lg">ঝাড়বাতি ও আলোকসজ্জার রোশনাই</h3>
+            <p class="text-xs text-charcoal/60 font-bengali mt-1">দীপাবলিতে সেজে ওঠা চন্দননগরের বিখ্যাত আলোক কাজ</p>
+          </div>
+        </div>
+
+        <!-- Photo 5: Blood Donation Camp -->
+        <div class="gallery-item bg-white border border-gold/20 p-4 rounded-3xl shadow-lg hover:shadow-2xl transition-all hover:border-vermillion group cursor-pointer" data-category="social" data-aos="fade-up" data-aos-delay="400">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-emerald-800 to-teal-900 flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors z-10"></div>
+            <svg class="w-20 h-20 text-red-500/50 group-hover:scale-110 transition-transform z-10" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M50 15C35 40 30 50 30 65c0 11 9 20 20 20s20-9 20-20c0-15-5-25-20-50z"/>
+            </svg>
+            <div class="absolute top-4 right-4 bg-charcoal/80 text-gold p-2.5 rounded-full border border-gold/20 opacity-0 group-hover:opacity-100 transition-opacity z-20">
+              <i data-lucide="zoom-in" class="w-5 h-5"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 bg-emerald-800 text-white text-xs font-bold px-2 py-1 rounded border border-gold z-20 font-bengali">রক্তদান শিবির</div>
+          </div>
+          <div class="pt-4 text-center">
+            <h3 class="font-bold font-bengali text-charcoal text-lg">স্বেচ্ছায় বাৎসরিক রক্তদান শিবির</h3>
+            <p class="text-xs text-charcoal/60 font-bengali mt-1">ক্লাব সদস্যদের উদ্যোগে সংগৃহীত ৯০+ ইউনিট জীবনদায়ী রক্ত</p>
+          </div>
+        </div>
+
+        <!-- Photo 6: Winter Blanket Distribution -->
+        <div class="gallery-item bg-white border border-gold/20 p-4 rounded-3xl shadow-lg hover:shadow-2xl transition-all hover:border-vermillion group cursor-pointer" data-category="social" data-aos="fade-up" data-aos-delay="500">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-emerald-950 to-charcoal flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors z-10"></div>
+            <svg class="w-20 h-20 text-gold/30 group-hover:scale-110 transition-transform z-10" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M20 30h60v40H20z M30 40h40v20H30z" opacity="0.6"/>
+            </svg>
+            <div class="absolute top-4 right-4 bg-charcoal/80 text-gold p-2.5 rounded-full border border-gold/20 opacity-0 group-hover:opacity-100 transition-opacity z-20">
+              <i data-lucide="zoom-in" class="w-5 h-5"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 bg-emerald-800 text-white text-xs font-bold px-2 py-1 rounded border border-gold z-20 font-bengali">সমাজসেবা</div>
+          </div>
+          <div class="pt-4 text-center">
+            <h3 class="font-bold font-bengali text-charcoal text-lg">শীতবস্ত্র ও কম্বল বিতরণ</h3>
+            <p class="text-xs text-charcoal/60 font-bengali mt-1">এলাকার অসহায় ও দুঃস্থ মানুষদের মাঝে বাৎসরিক শীতবস্ত্র প্রদান</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX DIALOG (MODAL) -->
+  <div id="lightbox" class="hidden fixed inset-0 bg-black/95 z-50 flex flex-col justify-between items-center p-4">
+    <!-- Close Button and Counter -->
+    <div class="w-full flex justify-between items-center max-w-5xl text-white py-4">
+      <div class="text-sm font-mono tracking-wide text-gold" id="lightbox-counter">Photo 1 of 6</div>
+      <button onclick="closeLightbox()" class="bg-white/10 hover:bg-vermillion hover:text-white p-3 rounded-full border border-white/15 transition-all focus:outline-none">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Centered Visual Content Frame -->
+    <div class="w-full max-w-3xl flex-1 flex items-center justify-center relative">
+      <!-- Left Prev Control Button -->
+      <button onclick="prevPhoto()" class="absolute left-2 md:-left-16 bg-white/5 hover:bg-white/20 hover:text-gold text-white p-3.5 rounded-full border border-white/15 transition-all focus:outline-none z-10">
+        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Graphic/Glow Display Screen representing the image -->
+      <div class="w-full aspect-[4/3] rounded-3xl border-2 border-gold/40 shadow-2xl flex flex-col items-center justify-center p-8 bg-gradient-to-br" id="lightbox-pandal">
+        <div id="lightbox-svg-container"></div>
+      </div>
+
+      <!-- Right Next Control Button -->
+      <button onclick="nextPhoto()" class="absolute right-2 md:-right-16 bg-white/5 hover:bg-white/20 hover:text-gold text-white p-3.5 rounded-full border border-white/15 transition-all focus:outline-none z-10">
+        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Caption Box -->
+    <div class="w-full max-w-4xl text-center py-6 pb-8 text-white bg-charcoal/60 backdrop-blur-md border border-white/10 rounded-2xl mb-4 p-4">
+      <span class="text-gold font-bold text-xs uppercase tracking-widest font-bengali" id="lightbox-tag">Tag placeholder</span>
+      <h2 class="text-xl md:text-2xl font-bold font-bengali text-cream mt-1" id="lightbox-title">Title placeholder</h2>
+      <p class="text-sm text-cream/70 font-bengali mt-1.5" id="lightbox-desc">Desc placeholder</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-white pt-16 pb-8 border-t border-gold/20 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 pb-12 border-b border-white/10">
+        
+        <!-- Column 1: Info and Branding -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-vermillion rounded-full flex items-center justify-center border border-gold">
+              <svg class="w-6 h-6 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50 15c-3 10-10 18-20 22 10 3 17 12 20 23 3-11 10-20 20-23-10-4-17-12-20-22z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold font-bengali text-lg text-white">অভিযাত্রী সংঘ</h3>
+              <p class="text-gold text-xs font-semibold tracking-wider uppercase">Abhijatri Sangha</p>
+            </div>
+          </div>
+          <p class="text-cream/60 font-bengali text-sm leading-relaxed max-w-sm">
+            সালকিয়ার শশী ভূষণ মুখার্জী লেনে অবস্থিত আমাদের সুপ্রাচীন সমাজсеবী ও সাংস্কৃতিক সংগঠন। দুর্গাপূজা, রক্তদান শিবির ও অন্যান্য উৎসবের প্রাণকেন্দ্র।
+          </p>
+          <div class="text-xs text-cream/40 font-mono">
+            ESTD: 1964 • Salkia, Howrah
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold font-bengali text-base uppercase tracking-wider">দ্রুত লিঙ্কসমূহ</h4>
+          <ul class="space-y-2 font-bengali text-sm text-cream/80">
+            <li><a href="index.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> প্রচ্ছদ (Home)</a></li>
+            <li><a href="about.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> আমাদের কথা (About)</a></li>
+            <li><a href="events.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> উৎসবের তালিকা (Events)</a></li>
+            <li><a href="gallery.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> গ্যালারি (Gallery)</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-1 text-gold/60"></i> যোগাযোগ (Contact)</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="space-y-4">
+          <h4 class="font-bold text-gold font-bengali text-base uppercase tracking-wider">ঠিকানা ও যোগাযোগ</h4>
+          <p class="text-cream/80 font-bengali text-sm leading-relaxed">
+            <strong class="text-white block font-sans">Abhijatri Sangha Office</strong>
+            শশী ভূষণ মুখার্জী লেন,<br>
+            সালকিয়া, হাওড়া-৭১১১০৬,<br>
+            পশ্চিমবঙ্গ, ভারত।
+          </p>
+          <div class="space-y-1 text-xs text-cream/60">
+            <p class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2 text-gold"></i> +৯১ ৩৩৩৩ ৩৩৩৩</p>
+            <p class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2 text-gold"></i> contact@abhijatrisangha.org</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social and Copyright bottom strip -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-cream/40 gap-4">
+        <div>
+          <p class="font-bengali text-center sm:text-left">© ২০২৬ অভিযাত্রী সংঘ। সর্বস্বত্ব সংরক্ষিত।</p>
+          <p class="text-[10px] text-center sm:text-left text-cream/30 mt-0.5 font-sans">Designed with deep Bengali cultural soul.</p>
+        </div>
+        
+        <!-- Social Icons -->
+        <div class="flex items-center space-x-4">
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="Facebook">
+            <i data-lucide="facebook" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="Instagram">
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-vermillion hover:text-white flex items-center justify-center border border-white/15 hover:border-gold text-gold transition-all" aria-label="YouTube">
+            <i data-lucide="youtube" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- AOS, Lucide, and Gallery/Lightbox Logic -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-out'
+    });
+    lucide.createIcons();
+
+    // Gallery data structure for dynamic lightbox viewing
+    const galleryData = [
+      {
+        tag: "দুর্গাপূজা ২০২৫",
+        title: "জগন্মাতা প্রতিমা শ্রীবিগ্রহ দর্শন",
+        desc: "স্বর্ণালঙ্কারে ভূষিতা দেবী প্রতিমার শান্ত বরাভয় রূপ",
+        bg: "from-crimsonDark via-vermillion to-charcoal",
+        svg: `<svg class="w-36 h-36 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50 15c-15 0-25 15-25 35 0 15 10 30 25 35 15-5 25-20 25-35 0-20-10-35-25-35zm0 10c8 0 15 10 15 25s-7 25-15 25-15-10-15-25 7-25 15-25z"/>
+                <path d="M40 45h20v5H40z M45 35h10v3H45z" opacity="0.8"/>
+              </svg>`
+      },
+      {
+        tag: "মহাষ্টমী আরতি",
+        title: "সন্ধ্যাপূজার ধুনuচি আরতি",
+        desc: "মহাধূপ ও ঢাকের তালে তালে যুবকদের ধুনুচি নৃত্য",
+        bg: "from-saffron via-vermillion to-charcoal",
+        svg: `<svg class="w-32 h-32 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50 20c-5 0-10 10-10 20h20c0-10-5-20-10-20zm-20 30h40v10l-15 20h-10l-15-20V50z"/>
+              </svg>`
+      },
+      {
+        tag: "বিজয়া দশমী",
+        title: "দশমীর ঐতিহ্যবাহী সিঁদুর খেলা",
+        desc: "মা দুর্গাকে অশ্রুসজল বিদায় ও সধবা মহিলাদের বরণ",
+        bg: "from-vermillion to-[#400202]",
+        svg: `<svg class="w-32 h-32 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                <circle cx="50" cy="50" r="25" fill="none" stroke="currentColor" stroke-width="5"/>
+                <path d="M50 15v70 M15 50h70" stroke="currentColor" stroke-width="3"/>
+              </svg>`
+      },
+      {
+        tag: "শ্যামাপূজা ২০২৫",
+        title: "ঝাড়বাতি ও আলোকসজ্জার রোশনাই",
+        desc: "দীপাবলিতে সেজে ওঠা চন্দননগরের বিখ্যাত আলোক কাজ",
+        bg: "from-indigo-950 via-purple-950 to-charcoal",
+        svg: `<svg class="w-32 h-32 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M20 50l30-30 30 30-30 30z"/>
+              </svg>`
+      },
+      {
+        tag: "রক্তদান শিবির",
+        title: "স্বেচ্ছায় বাৎসরিক রক্তদান শিবির",
+        desc: "ক্লাব সদস্যদের উদ্যোগে সংগৃহীত ৯০+ ইউনিট জীবনদায়ী রক্ত",
+        bg: "from-emerald-800 to-teal-900",
+        svg: `<svg class="w-32 h-32 text-red-500" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50 15C35 40 30 50 30 65c0 11 9 20 20 20s20-9 20-20c0-15-5-25-20-50z"/>
+              </svg>`
+      },
+      {
+        tag: "সমাজসেবা",
+        title: "শীতবস্ত্র ও কম্বল বিতরণ",
+        desc: "এলাকার অসহায় ও দুঃস্থ মানুষদের মাঝে বাৎসরিক শীতবস্ত্র প্রদান",
+        bg: "from-emerald-950 to-charcoal",
+        svg: `<svg class="w-32 h-32 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M20 30h60v40H20z M30 40h40v20H30z" opacity="0.8"/>
+              </svg>`
+      }
+    ];
+
+    let currentIndex = 0;
+    const lightbox = document.getElementById("lightbox");
+    const lightboxCounter = document.getElementById("lightbox-counter");
+    const lightboxPandal = document.getElementById("lightbox-pandal");
+    const lightboxSvgContainer = document.getElementById("lightbox-svg-container");
+    const lightboxTag = document.getElementById("lightbox-tag");
+    const lightboxTitle = document.getElementById("lightbox-title");
+    const lightboxDesc = document.getElementById("lightbox-desc");
+
+    // Connect click events to gallery items
+    document.querySelectorAll('.gallery-item').forEach((item, index) => {
+      item.addEventListener('click', () => {
+        openLightbox(index);
+      });
+    });
+
+    function openLightbox(index) {
+      currentIndex = index;
+      updateLightbox();
+      lightbox.classList.remove("hidden");
+      document.body.style.overflow = "hidden"; // Prevent body scrolling
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add("hidden");
+      document.body.style.overflow = "auto";
+    }
+
+    function updateLightbox() {
+      const data = galleryData[currentIndex];
+      lightboxCounter.innerText = `Photo ${currentIndex + 1} of ${galleryData.length}`;
+      
+      // Update background class list
+      lightboxPandal.className = `w-full aspect-[4/3] rounded-3xl border-2 border-gold/40 shadow-2xl flex flex-col items-center justify-center p-8 bg-gradient-to-br ${data.bg}`;
+      lightboxSvgContainer.innerHTML = data.svg;
+      
+      lightboxTag.innerText = data.tag;
+      lightboxTitle.innerText = data.title;
+      lightboxDesc.innerText = data.desc;
+    }
+
+    function nextPhoto() {
+      currentIndex = (currentIndex + 1) % galleryData.length;
+      updateLightbox();
+    }
+
+    function prevPhoto() {
+      currentIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
+      updateLightbox();
+    }
+
+    // Keyboard controls for lightbox
+    document.addEventListener('keydown', (e) => {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') nextPhoto();
+      if (e.key === 'ArrowLeft') prevPhoto();
+    });
+
+    // Gallery filter logic
+    function filterGallery(category) {
+      // Button states
+      const buttons = document.querySelectorAll('.gfilter-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('active', 'bg-vermillion', 'text-white');
+        btn.classList.add('text-charcoal', 'hover:bg-cream');
+      });
+
+      const clickedBtn = document.getElementById(`gbtn-${category}`);
+      clickedBtn.classList.remove('text-charcoal', 'hover:bg-cream');
+      clickedBtn.classList.add('active', 'bg-vermillion', 'text-white');
+
+      // Grid items
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      AOS.refresh();
+    }
+
+    // Mobile Navigation Drawer Toggle
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    mobileMenuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+      if (isHidden) {
+        mobileMenu.classList.remove("hidden");
+        mobileMenuBtn.innerHTML = '<i data-lucide="x" class="w-7 h-7"></i>';
+      } else {
+        mobileMenu.classList.add("hidden");
+        mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="w-7 h-7"></i>';
+      }
+      lucide.createIcons();
+    });
+  </script>
+
+</body>
+</html>

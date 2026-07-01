@@ -1,0 +1,6 @@
+{
+  "name": "Abhijatri Sangha",
+  "description": "Premium cultural website of Abhijatri Sangha, a community club in Salkia, Howrah organizing Durga Puja, Kali Puja, and other heritage festivals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
